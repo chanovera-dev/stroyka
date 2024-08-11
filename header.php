@@ -10,8 +10,8 @@
     <body <?php body_class(); ?>>
         <div class="site">
             <?php
-                include(TEMPLATEPATH.'/parts/header/menu-mobile.php');
-                include(TEMPLATEPATH.'/parts/sidebars/woocommerce-mobile.php');
+                menuMobile();
+                woocommerceSidebarMobile();
             ?>
             <div id="panel-overlay" class="panel-overlay"></div>
             <!-- mobile header start -->

@@ -106,6 +106,8 @@ add_action( 'widgets_init', 'widgets_areas' );
 require_once(get_template_directory() . '/functions/global.php');
 // establecer los breakpoints
 require_once(get_template_directory() . '/functions/breakpoints.php');
+// partes del tema
+require_once(get_template_directory() . '/functions/parts.php');
 // Anexo para establecer iconos
 // require_once(get_template_directory() . '/functions/icons.php');
 // Anexo para definir los componentes personalizados en las plantillas

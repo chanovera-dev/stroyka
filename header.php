@@ -9,20 +9,5 @@
     </head>
     <body <?php body_class(); ?>>
         <div class="site">
-            <?php
-                menuMobile();
-                woocommerceSidebarMobile();
-            ?>
-            <div id="panel-overlay" class="panel-overlay"></div>
-            <!-- mobile header start -->
-            <header id="mobile-header" class="container main-header">
-                <section class="section header-content">
-                    <?php
-                        include(TEMPLATEPATH.'/parts/header/menu-button.php');
-                        include(TEMPLATEPATH.'/parts/header/brand.php');
-                        get_search_form();
-                        include(TEMPLATEPATH.'/parts/header/attachments.php');
-                    ?>
-                </section>
-            </header>
+            
             <!-- mobile header end -->

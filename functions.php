@@ -117,6 +117,6 @@ require_once(get_template_directory() . '/functions/parts.php');
 // Anexo para definir los el customizer de wordpress
 // require_once(get_template_directory() . '/functions/customizer.php');
 // anexo para activar woocommerce
-if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-    require_once(get_template_directory() . '/functions/woocommerce.php');
-} else {}
+// if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+//     require_once(get_template_directory() . '/functions/woocommerce.php');
+// } else {}

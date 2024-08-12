@@ -1,0 +1,24 @@
+#body{display:grid;min-height:100vh;align-content:flex-start;grid-template-rows:auto 1fr auto;}
+
+/* mapa */
+.page-template-contact iframe{width:100%;height:var(--height-map--contact);margin-bottom:10px;}
+
+/* breadcrumbs */
+.breadcrumbs{display:inline-flex;align-items:center;flex-wrap:wrap;gap:0 12px;color:var(--wp--preset--color--attenuated);fill:var(--wp--preset--color--attenuated);padding-top:16px}
+.breadcrumbs a{color:var(--wp--preset--color--text);transition:all .3s ease;}
+.breadcrumbs a:hover{color:var(--wp--preset--color--links);}
+
+/* título */
+main .content-header .title-wrapper{padding:6px 0 32px;}
+main .content-header .title-wrapper h1{font-size:var(--font-size--titles-page);}
+
+/* dirección y formulario */
+.border-section{padding:var(--padding-address-contact);display:grid;gap:50px;grid-template-columns:var(--grid-address-contact);border:2px solid var(--wp--preset--color--border);}
+.form-section{margin-bottom:60px;font-size:16px;line-height:1.8;}
+
+.border-section h2{font-size:26px;margin-bottom:24px;}
+.border-section ul{margin:0;padding:0;list-style:none;}
+.border-section ul li{color:var(--wp--preset--color--text);}
+.border-section p{margin-top:16px;}
+.border-section a{color:var(--wp--preset--color--text);transition:all .3s ease;}
+.border-section a:hover{color:var(--wp--preset--color--links);}

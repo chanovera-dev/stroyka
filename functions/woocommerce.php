@@ -4,12 +4,18 @@
 function soporte_woocommerce(){ add_theme_support( 'woocommerce' ); }
 add_action( 'after_setup_theme', 'soporte_woocommerce' );
 
+
+
 add_theme_support( 'wc-product-gallery-zoom' );
 add_theme_support( 'wc-product-gallery-lightbox' );
 add_theme_support( 'wc-product-gallery-slider' );
 
+
+
 //Disable all woocommerce stylesheets
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+
 
 // cambia el separador del breadcrumbs de woocommerce
 add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
@@ -21,6 +27,8 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
             </svg>';
 	return $defaults;
 }
+
+
 
 // mostrar el carrito en tiempo real
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
@@ -40,6 +48,8 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	$fragments['a.cart-customlocation'] = ob_get_clean();
 	return $fragments;
 }
+
+
 
 // Crea una lista de las categorías y subcategorías de woocommerce
 function obtener_categorias_woocommerce() {
@@ -93,6 +103,8 @@ function obtener_categorias_woocommerce() {
     }
 }
 
+
+
 // C O N T E N E D O R E S   P A R A   W O O C O M M E R C E
 
 // crea un sidebar llamado woocommerce, da de baja la sidebar original y toma su lugar
@@ -107,6 +119,8 @@ function stroyka_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'stroyka_widgets_init' );
+
+
  
 // suplantando la sidebar de woocommerce
 add_action( 'wp', function() {
@@ -126,27 +140,10 @@ add_action( 'wp', function() {
     }
 } );
 
-// sidebar mobile de woocommerce
-function woocommerceSidebarMobile() {
 
-    ?>
-    <aside class="sidebar-woocommerce--wrapper">
-        <div class="name-sidebar--wrapper">
-            <p class="name-sidebar"><b><?php echo esc_html__('Filtros', 'stroyka'); ?></b></p>
-            <button id="close-sidebar-mobile" onclick="closeSidebarMobile()">
-                <svg width="20px" height="20px">
-                    <use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#cross-20"></use>
-                </svg>
-            </button>
-        </div>
-        <div id="sidebar-woocommerce--mobile">
-            <?php
-                if ( is_active_sidebar('woocommerce_sidebar') ) {
-                    dynamic_sidebar('woocommerce_sidebar');
-                }
-            ?>
-        </div>
-    </aside>
-    <?php
 
-}
+// A N E X O S
+// Estilos particulares para los templates
+require_once(get_template_directory() . '/functions/woocommerce/woocommerce-templates.php');
+// Anexo para definir los contenedores de las listas de productos
+require_once(get_template_directory() . '/functions/woocommerce/woocommerce-loop.php');

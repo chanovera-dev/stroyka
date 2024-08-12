@@ -1,0 +1,64 @@
+#body{display:grid; min-height:100vh; align-content:flex-start; grid-template-rows:auto 1fr auto;}
+
+.error404 .content-section{text-align:center;margin-bottom:var(--margin-bottom-content--error404);}
+.error404 .content-section h1{padding:var(--padding-title--error404); font-size:var(--font-size-title--error404); line-height:var(--line-height-title--error404); color:var(--color-title--error404);}
+.error404 .content-section h2{margin-bottom:30px; font-size:36px; color:var(--wp--preset--color--text);}
+.error404 .content-section p{color:var(--wp--preset--color-text);}
+.error404 .content-section a{
+    margin-top:20px;
+    display:inline-block;
+    font-size: .875rem;
+    height: calc(1.875rem + 2px);
+    line-height: 1.25;
+    padding: .375rem 1rem;
+    font-weight: 500;
+    border:1px solid #f0f0f0;
+    border-radius:2px;
+    background: #f0f0f0;
+    color: #3d464d;
+    fill: #3d464d;
+    transition:all .3s ease;
+}
+.error404 .content-section a:hover{background:var(--wp--preset--color--text); color:var(--wp--preset--color--border);}
+
+/* searchform */
+.error404 .content-section .search-form{margin:20px auto 30px;display:flex;flex-wrap:nowrap;max-width:480px;gap:10px;}
+.error404 .content-section .search-form label{width:100%;}
+.error404 .content-section .search-form .search-field{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.error404 .content-section .search-form .search-field:focus{
+    outline:none;
+    border:1px solid var(--wp--preset--color--border-input-focus); box-shadow:var(--wp--preset--shadow--input);
+}
+.error404 .content-section .search-form .search-submit{
+    border-radius: 2px;
+    transition: all .1s ease-in-out;
+    font-size: 1rem;
+    height: calc(2.25rem + 2px);
+    line-height: 1.5;
+    padding: .375rem 1.25rem;
+    font-weight: 500;
+    border:1px solid #ffd333;
+    background: #ffd333;
+    color: #3d464d;
+    fill: #3d464d;
+    transition:all .3s ease;
+}
+.error404 .content-section .search-form .search-submit:hover{
+    border-color: #3d464d;
+    background: #3d464d;
+    color:#fff;
+}

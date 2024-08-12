@@ -1,0 +1,10 @@
+.features-section.padding-section{padding:15px 0; margin-bottom:45px;}
+.table-features{width:100%; border:1px solid var(--wp--preset--color--line); border-collapse:collapse;}
+.table-features tr{display:grid;grid-template-columns:repeat(auto-fill, minmax(230px, 1fr));}
+.feature-cell{display:grid; grid-template-columns:48px 1fr; min-height:clamp(85px, 4vw, 90px); padding:0 24px; align-items:center; place-content:center; gap:0 24px; border:1px solid var(--wp--preset--color--line);}
+.feature-cell svg{fill:var(--wp--preset--color--primary-color-emphasis); grid-column:1/2; grid-row:1/3;width:clamp(48px, 4vw, 55px); height:clamp(48px, 4vw, 55px);}
+.feature-cell:has(a){grid-template-columns:1fr;gap:0;padding:0;}
+.feature-cell > a{display:grid; grid-template-columns:48px 1fr; padding:0 24px; align-items:center; place-content:center; gap:0 24px;}
+.feature-cell > a p{color:var(--wp--preset--color--text);}
+.feature-cell h2{font-size:17px; font-weight:700; grid-column:2/3; grid-row:1/2;}
+.feature-cell p{font-size:14px; grid-column:2/3; grid-row:2/3;}

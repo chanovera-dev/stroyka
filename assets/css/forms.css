@@ -1,0 +1,127 @@
+/* formularios */
+main input[type=text],
+main input[type=email],
+main input[type=tel],
+main input[type=url],
+textarea{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+textarea{height:94px;}
+main input[type=text]::placeholder,
+main input[type=email]::placeholder,
+main input[type=tel]::placeholder,
+main input[type=url]::placeholder,
+textarea::placeholder{font-size:16px; color:var(--wp--preset--color--attenuated); font-family:var(--wp--preset--font-family--system-font); transition:all .25s ease;}
+main input[type=text]:focus,
+main input[type=email]:focus,
+main input[type=tel]:focus,
+main input[type=url]:focus,
+textarea:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+main input[type=submit],
+button.single_add_to_cart_button{
+    position:relative;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    display: inline-flex;
+    align-items:center;
+    text-transform:lowercase;
+    height:38px;
+    padding:0 14px;
+    border: 1px solid var(--wp--preset--color--yellow);
+    background-color: var(--wp--preset--color--yellow);
+    color:var(--wp--preset--color--text);
+    font-size: 16px;
+    border-radius:2px;
+    text-transform:capitalize;
+    font-weight:500;
+    font-family: var(--wp--preset--font-family--system-font);
+    transition: all .3s ease;
+}
+main input[type=submit]:hover,
+button.single_add_to_cart_button:hover{background-color:var(--wp--preset--color--text); color:#ffffff; border:1px solid var(--wp--preset--color--text);}
+main input[type=submit]:active:hover,
+button.single_add_to_cart_button:active:hover{}
+main input[type=submit]:active,
+button.single_add_to_cart_button:active{box-shadow:rgba(0,0,0,.5) 0 3px 5px inset; transform: translateY(2px); border:1px solid rgba(0,0,0,.25);}
+
+/* selects */
+select{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 10'%3E%3Cpath fill='%234d4d4d' d='M4.503 4H.497c-.403 0-.639-.508-.408-.878L2.095.233a.469.469 0 0 1 .816 0l2 2.889c.231.37-.005.878-.408.878zM.497 6h4.006c.403 0 .639.504.408.871L2.905 9.737a.47.47 0 0 1-.816 0l-2-2.866C-.142 6.504.094 6 .497 6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 5px 10px;
+    background-position: right 7.5px center;
+    padding-right: calc(7.5px * 2 + 5px);
+    height:32px;
+    line-height: 1.25;
+    padding: 3.125px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family:var(--wp--preset--font-family--system-font);
+    font-size:1rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius:2px;
+    transition:all .3s ease;
+}
+select:focus{
+    outline:none;
+    box-shadow:var(--wp--preset--shadow--input);
+}
+
+/* formulario de cantidad en producto */
+.quantity{display:flex; align-items:space-between; border:2px solid var(--wp--preset--color--line); border-radius:2px; width:110px; height:46px;}
+main input[type=number]::-webkit-inner-spin-button, 
+main input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none; margin:0;}
+main input[type=number]{-moz-appearance:textfield;}
+.quantity{display:flex; justify-content:center;}
+#input-qty{width:41px; height:41px; font-size:20px; border:none; border-radius:0; border-bottom:3px solid transparent; background-color:transparent; color:var(--wp--preset--color-text); padding:0 10px; margin:0 7px; text-align:right; transition:all .3s ease;}
+#input-qty:focus{outline:none; border-bottom:3px solid var(--wp--preset--color--links);}
+#button-less,
+#button-plus{
+    display:grid; place-content:center; 
+    width:24px; height:44px;
+    font-size:20px; 
+    color:var(--wp--preset--color--border-input); 
+    border:none;
+    background-color:transparent;
+    transition:all .3s ease;
+}
+#button-less:focus, 
+#button-plus:focus{outline:none;}
+
+/* contact-form 7 */
+.wpcf7-form{position:relative; display:grid; gap:15px 10px;}
+.border-section .wpcf7-form p{margin-top:0;}
+.wpcf7-form p:has(label) label:has(span){display:grid; gap:5px;}
+.wpcf7 form .wpcf7-response-output{margin: 0; border-radius:4px; padding:10px; background-color:var(--wp--preset--color--yellow); color:var(--wp--preset--color--text);}
+
+/* ajustes a comentarios */
+#commentform > *:not(:last-child){margin-bottom:10px;}
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url{display:grid; gap:5px;}
+
+@media(min-width:768px){
+    .wpcf7-form{grid-template-columns:1fr 1fr;}
+    .wpcf7-form :nth-child(n+4){grid-column:1/-1;}
+}

@@ -1,0 +1,8 @@
+/* breadcrumbs */
+.breadcrumbs{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 12px; color:var(--wp--preset--color--attenuated); fill:var(--wp--preset--color--attenuated); padding-top:16px}
+.breadcrumbs a{color:var(--wp--preset--color--text); transition:all .3s ease;}
+.breadcrumbs a:hover{color:var(--wp--preset--color--links);}
+
+/* título */
+main .content-header .title-wrapper{padding:6px 0 32px;}
+main .content-header .title-wrapper h1{font-size:var(--font-size--titles-page);}

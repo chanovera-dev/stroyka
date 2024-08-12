@@ -1,0 +1,20 @@
+/* breadcrumbs */
+.breadcrumbs{display:inline-flex; align-items:center; flex-wrap:wrap; gap:0 12px; color:var(--wp--preset--color--attenuated); fill:var(--wp--preset--color--attenuated); padding-top:16px}
+.breadcrumbs a{color:var(--wp--preset--color--text); transition:all .3s ease;}
+.breadcrumbs a:hover{color:var(--wp--preset--color--links);}
+
+/* título */
+main .content-header .title-wrapper{padding:6px 0 32px;}
+main .content-header .title-wrapper h1{font-size:var(--font-size--titles-page);}
+
+/* Entradas */
+main .posts-wrapper{display:grid; gap:var(--gap--posts-wrapper);grid-template-columns:var(--grid-template-columns--posts-wrapper);margin-bottom:var(--margin-bottom--post);}
+main .posts-wrapper .posts{display:grid; gap:var(--separation-posts);grid-template-columns:var(--grid-template-columns--posts);}
+main .posts-wrapper .posts .thumbnail{width:100%;}
+main .posts-wrapper .posts .publicate-date_widget{margin-top:14px; color:var(--wp--preset--color--attenuated);}
+main .posts-wrapper .posts .permalink{color:var(--wp--preset--color--text); transition: all .3s ease;}
+main .posts-wrapper .posts .permalink .title{font-size:18px; font-weight:500; line-height:22px; margin:6px 0 12px;}
+main .posts-wrapper .posts p{line-height:24px;}
+
+/* búsqueda */
+.search main .content .section .products{margin-bottom:var(--margin-bottom--post);padding:0;list-style:none;}

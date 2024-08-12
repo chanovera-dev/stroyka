@@ -1,0 +1,57 @@
+/* sidebar widgets · generales */
+aside{display:grid; gap:30px; align-content:flex-start;}
+aside .widget{border:2px solid var(--wp--preset--color--border); padding:28px; border-radius:2px;}
+aside .widget > :not(:last-child){margin-bottom:20px;}
+aside .widget h2{font-size:20px;}
+aside .widget p{line-height:1.5; font-size:16px;}
+aside .widget .social .menu li a{border-radius:0;}
+
+/* nube de etiquetas */
+aside .tags div{display:inline-flex; flex-wrap:wrap; gap:7px;}
+aside .tags a{
+    display:inline-flex;
+    background: transparent;
+    font-weight:500;
+    border: 1px solid #e5e5e5;
+    color: var(--wp--preset--color--text);
+    border-radius: 1.5px;
+    padding: 6px 10px 5px;
+    transition: all .3s ease;
+    font-size:13px!important;
+}
+aside .tags a:hover{border-color:var(--wp--preset--color--yellow); background-color:var(--wp--preset--color--yellow);}
+
+/* boletín de noticias */
+main aside .newsletter{text-align:center; background-color:#f5f5f5; border-color:#f5f5f5;}
+main aside .newsletter h2{font-size:24px; padding-top:6px;}
+main aside .newsletter p{font-size:15px;}
+main aside .newsletter .tnp-subscription{margin:0; max-width:100%;}
+main aside .newsletter .tnp-subscription .tnp-field{margin-bottom:0;}
+main aside .newsletter .tnp-subscription form{display:grid; gap:16px;}
+main aside .newsletter .tnp-subscription form .tnp-field-email{text-align:left;}
+main aside .newsletter .tnp-subscription form .tnp-field-email input[type=email]{width:100%;height:38px;padding:0 12px;font-size:15px;font-family:var(--wp--preset--font-family--body);color:var(--wp--preset--color--color-input);background-color:var(--wp--preset--color--background-input);border:1px solid var(--wp--preset--color--border-input);display:flex;align-items:center;border-radius:3px;transition:all .3s ease;}
+main aside .newsletter .tnp-subscription form .tnp-field-email input[type=email]:focus{outline:none;border:1px solid var(--wp--preset--color--border-input-focus);box-shadow:var(--wp--preset--shadow--input);}
+main aside .newsletter .tnp-subscription form .tnp-field-button input[type=submit]{width:100%;height:38px;display:grid;place-content:center;padding:0 12px;font-size:16px;font-weight:700;border:1px solid var(--wp--preset--color--primary-color-emphasis);background-color:var(--wp--preset--color--primary-color-emphasis);color:var(--wp--preset--color--text);border-radius:3px;transition:all .3s ease;}
+main aside .newsletter .tnp-subscription form .tnp-field-button :is(input[type=submit]:hover,input[type=submit]:focus){outline:none;border:1px solid var(--wp--preset--color--text);background-color:var(--wp--preset--color--text);color:#fff;}
+
+/* Últimos artículos */
+main aside .latest-posts .title-wrapper{padding-bottom:10px;} 
+main aside .latest-posts .post{display:grid; grid-template-columns:90px 1fr; grid-template-rows:auto auto; gap:0 16px;}
+main aside .latest-posts .post .thumbnail{width:90px; height:70px; object-fit:cover; grid-row:1/3;}
+main aside .latest-posts .post .permalink{color:var(--wp--preset--color--text); grid-row:1/2; transition:all .3s ease;}
+main aside .latest-posts .post .permalink:hover{color:var(--wp--preset--color--links);}
+main aside .latest-posts .post .permalink h4{font-weight:400;}
+main aside .latest-posts .post .publicate-date_widget{grid-row:2/3; font-size:13px; color:var(--wp--preset--color--attenuated); margin-top:2px;}
+
+/* artículos relacionados */
+main aside .related-posts_widget{display:grid; gap:30px; grid-template-columns:var(--grid-template-columns--posts);}
+main aside .related-posts_widget .title-wrapper{position:relative; overflow:hidden; grid-column:1/-1;}
+main aside .related-posts_widget .title-wrapper .title{display:inline; position:relative; font-size:22px;}
+main aside .related-posts_widget .title-wrapper .title:before{position:absolute; top:50%; transform:translateY(-50%); left:calc(100% + 15px); width:1200px; height:2px; background-color:var(--wp--preset--color--line); content:'';}
+main aside .related-posts_widget .post .thumbnail{width:100%; aspect-ratio:3/2; object-fit:cover; margin-bottom:12px; transition:all .3s ease;}
+main aside .related-posts_widget .post .thumbnail:hover{filter:brightness(.75);}
+main aside .related-posts_widget .post .permalink{font-size:15px; line-height:20px; color:var(--wp--preset--color--text); transition:all .3s ease;}
+main aside .related-posts_widget .post .permalink:hover{color:var(--wp--preset--color--links);  text-decoration:none;}
+main aside .related-posts_widget .post > .publicate-date_widget{color:var(--wp--preset--color--attenuated); margin-top:8px;}
+
+/* nuestro boletín */

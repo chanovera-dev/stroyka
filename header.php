@@ -9,5 +9,31 @@
     </head>
     <body <?php body_class(); ?>>
         <div class="site">
-            
+            <?php
+                include(TEMPLATEPATH.'/parts/header/menu-mobile.php');
+                include(TEMPLATEPATH.'/parts/sidebars/woocommerce-mobile.php');
+            ?>
+            <div id="panel-overlay" class="panel-overlay"></div>
+            <!-- mobile header start -->
+            <header id="mobile-header" class="container main-header">
+                <section class="section header-content">
+                    <?php
+                        include(TEMPLATEPATH.'/parts/header/menu-button.php');
+                        include(TEMPLATEPATH.'/parts/header/brand.php');
+                        get_search_form();
+                        include(TEMPLATEPATH.'/parts/header/attachments.php');
+                    ?>
+                </section>
+            </header>
             <!-- mobile header end -->
+            <header id="desktop-header">
+                <?php
+                    include(TEMPLATEPATH . '/parts/header/top-bar.php');
+                    include(TEMPLATEPATH . '/parts/header/middle-bar.php');
+                ?>
+            </header>
+            <header id="desktop-main-header" class="container main-header">
+                <?php
+                    include(TEMPLATEPATH . '/parts/header/bottom-bar.php');
+                ?>
+            </header>

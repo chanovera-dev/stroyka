@@ -1,0 +1,23 @@
+/* navegación de páginas */
+.navigation.pagination .screen-reader-text{display:none;}
+.navigation.pagination{display:grid; grid-gap:30px; text-align:center; grid-column:1/-1;}
+.search main .container .section .navigation.pagination{margin-bottom:var(--margin-bottom--post);}
+.woocommerce-pagination{margin-top:40px;grid-column:1/-1;}
+.navigation.pagination .nav-links,
+.woocommerce-pagination .page-numbers{display:flex; gap:5px; justify-content:center; height:33px;align-self:end; list-style:none;padding-left:0;}
+.navigation.pagination .nav-links .page-numbers,
+.woocommerce-pagination .page-numbers .page-numbers{display:grid; place-content:center; font-weight:500; font-size:16px; width:29px; height:33px; color:var(--wp--preset--color--text); box-sizing:border-box; border-radius:var(--border-radius--button); text-decoration:none; transition:all .3s ease;}
+.navigation.pagination .nav-links .page-numbers.disabled svg,
+.woocommerce-pagination .page-numbers .page-numbers.disabled svg{fill:var(--wp--preset--color--attenuated);}
+.navigation.pagination .nav-links .page-numbers.current,
+.woocommerce-pagination .page-numbers .page-numbers.current{background-color:var(--wp--preset--color--primary-color-emphasis); color:var(--wp--preset--color--text);}
+.navigation.pagination .nav-links .page-numbers.current:hover,
+.woocommerce-pagination .page-numbers .page-numbers.current:hover{background-color:var(--wp--preset--color--primary-color-emphasis); color:var(--wp--preset--color--text);}
+.navigation.pagination .nav-links .page-numbers:hover,
+.woocommerce-pagination .page-numbers .page-numbers:hover{background-color:var(--wp--preset--color--line);}
+.navigation.pagination .nav-links .page-numbers.disabled:hover,
+.woocommerce-pagination .page-numbers .page-numbers.disabled:hover{background-color:transparent!important; cursor:default;}
+:is(.navigation.pagination .nav-links, .woocommerce-pagination .page-numbers) :is(.page-numbers.prev, .page-numbers.next){fill:var(--wp--preset--color--text);}
+:is(.navigation.pagination .nav-links, .woocommerce-pagination .page-numbers) :is(.page-numbers.prev, .page-numbers.next):hover{background-color:var(--wp--preset--color--line);}
+
+:is(.navigation.pagination, .woocommerce-pagination) a:focus{box-shadow:none;}

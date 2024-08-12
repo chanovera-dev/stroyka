@@ -1,0 +1,34 @@
+#catalog-products{margin-bottom:50px;}
+#catalog-products .padding-section{padding:24px 0;}
+.catalog-link{position:relative; display:grid; place-content:center; width:100%; height:var(--height-catalog); background-color:#f6f6f6;color:#fff; background-repeat:no-repeat; background-position:50% 50%; background-size:cover;}
+.catalog-link .background-cover{
+    position:absolute;top:0;left:0;width:100%;height:100%;
+    background: linear-gradient(150deg, #8eaeb8, transparent 30%), 
+                linear-gradient(210deg, #8eaeb8, transparent 30%), 
+                linear-gradient(330deg, #8eaeb8, transparent 30%), 
+                linear-gradient(390deg, #8eaeb8, transparent 30%), 
+                linear-gradient(225deg, #ecf4f9, #d8e6ee, #c4d8e3, #b0c9d7);
+    opacity:.3;
+    transition:all .3s ease;
+}
+.catalog-link:hover .background-cover{opacity:.8;}
+.catalog-link .tools{text-align:center; display:grid; z-index:1;}
+.catalog-link .tools h2{font-weight:700; font-size:30px; margin-bottom:20px; color:#fff;text-shadow: 3px 4px 7px rgb(61 70 81 / 90%);}
+.catalog-link .tools p{font-size:16px;text-shadow: 3px 4px 7px rgb(61 70 81 / 90%);}
+.catalog-link .tools button{
+    margin-top:15px;
+    border:1px solid var(--wp--preset--color--primary-color-emphasis);
+    background-color:var(--wp--preset--color--primary-color-emphasis);
+    color:var(--wp--preset--color--text);
+    box-shadow:0 4px 7px rgb(61 70 81 / 30%);
+    font-weight:600;
+    border-radius:var(--border-radius--button);
+    display:inline-flex; align-items:center; height:32px; padding:0 20px;
+    margin-inline:auto;
+    transition:all .3s ease;
+}
+.catalog-link .tools button:hover{
+    border:1px solid var(--wp--preset--color--text); gap:10px;
+    background-color:var(--wp--preset--color--text);
+    color:#fff;
+}

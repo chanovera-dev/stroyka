@@ -115,18 +115,22 @@ function menuMobileWithChildrens() {
         button.classList.add('mobile-links__item-toggle');
         button.setAttribute('onclick', 'toggleSubMenu(this)');
         
-        // Crear el nuevo elemento SVG
+        // Crear el elemento SVG
         var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute('class', 'mobile-links__item-arrow');
-        svg.setAttribute('width', '12px');
-        svg.setAttribute('height', '7px');
-        
-        // Crear el elemento <use> dentro del SVG
-        var use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', templateDirectoryUri + '/assets/img/sprite.svg#arrow-rounded-down-12x7');
-        
-        // Agregar el elemento <use> al SVG
-        svg.appendChild(use);
+        svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+        svg.setAttribute('width', '16');
+        svg.setAttribute('height', '16');
+        svg.setAttribute('fill', 'currentColor');
+        svg.setAttribute('class', 'bi bi-chevron-down');
+        svg.setAttribute('viewBox', '0 0 16 16');
+
+        // Crear el elemento path dentro del SVG
+        var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute('fill-rule', 'evenodd');
+        path.setAttribute('d', 'M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z');
+
+        // Agregar el path al elemento SVG
+        svg.appendChild(path);
         // Agregar el SVG al botón
         button.appendChild(svg);
 

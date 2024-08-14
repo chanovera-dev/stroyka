@@ -115,7 +115,7 @@ function stroyka_theme_custom_breakpoints() {
                 /* cabecera */
                     .open-searchform-mobile--button{display:none;}
                     /* cabecera · mobile · caja de búsqueda */
-                    #mobile-header .searchform-wrapper{width:63%;height:36px;margin-right:auto;position:relative;top:0;}
+                    #mobile-header .searchform-wrapper{width:63%;height:36px;margin-right:auto;position:relative;top:0;background:transparent;}
                     #mobile-header .searchform-wrapper .searchform{position:relative;}
                         /* botones */
                         #mobile-header .searchform-wrapper .searchform #search-buttons{height:36px;position:absolute;top:0;right:0;}

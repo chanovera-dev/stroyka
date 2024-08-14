@@ -100,17 +100,20 @@ function stroyka_theme_custom_breakpoints() {
                 }
             }
 
+            @media(max-width:574px) {
+                /* cabecera */
+                    .wishlist-button{display:none;}
+            }
+
             @media(min-width:575px){
                 :root{
                     /* media queries */
                     --breakpoint:min(100% - 30px, 510px);
                     --breakpoint-without-padding:min(100%, 510px);
                 }
-            }
 
-            @media(max-width:575px) {
                 /* cabecera */
-                    .wishlist-button{display:none;}
+                    .open-searchform-mobile--button{display:none;}
             }
 
             @media(min-width:768px){

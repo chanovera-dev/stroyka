@@ -168,7 +168,7 @@ function toggleSubMenu(button) {
 // abrir el searchform mobile
 function openSearchformMobile() {
     // agrega al menú la clase open, mostrándolo
-    document.querySelector('.searchform--wrapper').classList.add('active');
+    document.querySelector('.searchform-wrapper').classList.add('active');
 }
 
 // F U N C I O N E S   D E L   M E N Ú   D E S K T O P

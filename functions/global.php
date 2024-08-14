@@ -19,10 +19,10 @@ function stroyka_theme_custom_global() {
             /* estilos al hacer scroll */
             :is(.scroll-down,.scroll-up) .main-header{box-shadow:var(--wp--preset--shadow--header);z-index:6;}
             /* open mobile button */
-            .open-menu-mobile--button{display:grid;place-content:center;width:var(--width-attachments);height:var(--height-attachments);border-radius:var(--border-radius--button);color:var(--wp--preset--color--text);transition:all .3s ease;}
+            .open-menu-mobile--button{display:grid;place-content:center;width:var(--width-attachments);height:var(--height-attachments);border-radius:var(--border-radius--button);fill:var(--wp--preset--color--text);transition:all .3s ease;}
             .open-menu-mobile--button:hover{background-color:#ffffff7a;cursor:pointer;}
             /* open searchform button */
-            .open-searchform-mobile--button{display:grid;place-content:center;width:var(--width-attachments);height:var(--height-attachments);border-radius:var(--border-radius--button);color:var(--wp--preset--color--text);margin-left:auto;transition:all .3s ease;}
+            .open-searchform-mobile--button{display:grid;place-content:center;width:var(--width-attachments);height:var(--height-attachments);border-radius:var(--border-radius--button);fill:var(--wp--preset--color--text);margin-left:auto;transition:all .3s ease;}
             .open-searchform-mobile--button:hover{background-color:#ffffff7a;cursor:pointer;}
             /* wishlist · carrito */
             .attachment-list{display:flex;justify-self:end;}

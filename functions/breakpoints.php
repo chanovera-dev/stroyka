@@ -115,13 +115,13 @@ function stroyka_theme_custom_breakpoints() {
                 /* cabecera */
                     .open-searchform-mobile--button{display:none;}
                     /* cabecera · mobile · caja de búsqueda */
-                    #mobile-header .searchform-wrapper{width:63%;height:36px;margin-right:auto;}
+                    #mobile-header .searchform-wrapper{width:63%;height:36px;margin-right:auto;position:relative;}
                     #mobile-header .searchform-wrapper .searchform{position:relative;}
                         /* botones */
                         #mobile-header .searchform-wrapper .searchform #search-buttons{height:36px;position:absolute;top:0;right:0;}
-                        #mobile-header .searchform-wrapper .searchform #search-buttons #open-searchbar--button{width:36px;height:36px;display:grid;place-content:center;}
-                        #mobile-header .searchform-wrapper .searchform #search-buttons #open-searchbar--button svg{fill:var(--wp--preset--color--attenuated);transition:all .3s ease;}
-                        #mobile-header .searchform-wrapper .searchform #search-buttons #open-searchbar--button:hover svg{fill:var(--wp--preset--color--text);}
+                        #mobile-header .searchform-wrapper .searchform #search-buttons #searchbar--button{width:36px;height:36px;display:grid;place-content:center;}
+                        #mobile-header .searchform-wrapper .searchform #search-buttons #searchbar--button svg{fill:var(--wp--preset--color--attenuated);transition:all .3s ease;}
+                        #mobile-header .searchform-wrapper .searchform #search-buttons #searchbar--button:hover svg{fill:var(--wp--preset--color--text);}
                         #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:none;}
                         /* formulario */
                         #mobile-header .searchform-wrapper .searchform input[type=text]{height:36px;width:100%;padding:0 36px 0 10px;border:none; border-radius:var(--border-radius--button);background-color:#ffffff7a;font-size:15px;transition:all .3s ease;}

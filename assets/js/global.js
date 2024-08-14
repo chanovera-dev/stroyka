@@ -123,7 +123,7 @@ function menuMobileWithChildrens() {
         
         // Crear el elemento <use> dentro del SVG
         var use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-        use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', 'assets/img/sprite.svg#arrow-rounded-down-12x7');
+        use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', templateDirectoryUri + '/assets/img/sprite.svg#arrow-rounded-down-12x7');
         
         // Agregar el elemento <use> al SVG
         svg.appendChild(use);

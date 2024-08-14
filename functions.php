@@ -242,8 +242,6 @@ function get_breadcrumb() {
     }
 }
 
-
-
 // A N E X O S
 /* anexo para cargar el css que se usa en todas las páginas */
 require_once(get_template_directory() . '/functions/global.php');

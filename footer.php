@@ -79,6 +79,9 @@
                 </div>
             </footer>
             <?php wp_footer(); ?>
+            <script>
+                var templateDirectoryUri = '<?php echo get_template_directory_uri(); ?>';
+            </script>
         </div>
     </body>
 </html>

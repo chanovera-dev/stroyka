@@ -65,6 +65,11 @@
 					"slug": "attenuated"
 				},
 				{
+					"color": "#999999",
+					"name": "Mobile button close",
+					"slug": "mbc"
+				},
+				{
 					"color": "#f0f0f0",
 					"name": "Border",
 					"slug": "border"

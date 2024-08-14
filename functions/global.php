@@ -55,8 +55,8 @@ function stroyka_theme_custom_global() {
                 .menu-mobile--wrapper .name-menu--wrapper{display:flex;align-items:center;justify-content:space-between;height:54px;border-bottom:1px solid var(--wp--preset--color--border);}
                 .menu-mobile--wrapper .name-menu--wrapper .name-menu{padding:0 20px;}
                 .menu-mobile--wrapper .name-menu--wrapper #close-menu-mobile{width:54px;height:54px;border:none;border-left:1px solid var(--wp--preset--color--border);border-bottom:1px solid var(--wp--preset--color--border);display:grid;place-content:center;background-color:var(--wp--preset--color--background);}
-                .menu-mobile--wrapper .name-menu--wrapper #close-menu-mobile svg{fill:var(--wp--preset--color--attenuated);transition:all .3s ease;}
-                .menu-mobile--wrapper .name-menu--wrapper #close-menu-mobile:hover svg{fill:var(--wp--preset--color--text);}
+                .menu-mobile--wrapper .name-menu--wrapper #close-menu-mobile svg{fill:var(--wp--preset--color--mbc);transition:all .3s ease;}
+                .menu-mobile--wrapper .name-menu--wrapper #close-menu-mobile:hover svg{fill:var(--wp--preset--color--text);} 
                 /* listas */
                 #menu-mobile{height:100%;overflow-y:scroll;padding-bottom:80px;}
                 #menu-mobile::-webkit-scrollbar,

@@ -32,30 +32,30 @@ function stroyka_theme_custom_global() {
             .attachment-list li .counter svg{fill:var(--wp--preset--color--text);}
             .attachment-list li .counter .wrapper{position:absolute;top:var(--position--counter);right:var(--position--counter);}
             .attachment-list li .counter .wrapper .number{display:grid;width:15px;height:15px;place-content:center;background-color:var(--wp--preset--color--background);border-radius:50%;color:var(--wp--preset--color--text);font-size:10px;}
-            /* cabecera · mobile · caja de búsqueda · inactiva */
+            /* cabecera · mobile · caja de búsqueda · inactiva *
             #mobile-header .searchform-wrapper{width:40px;height:36px;border-radius:var(--border-radius--button);transition:all .3s ease;}
             #mobile-header .searchform-wrapper:hover{background-color:#ffffff7a;}
             #mobile-header .searchform-wrapper .searchform{display:flex;align-items:center;justify-content:center;}
-                /* botones */
+                /* botones *
                 #mobile-header .searchform-wrapper .searchform #search-buttons div{transition:all .3s ease;}
                 #mobile-header .searchform-wrapper .searchform #search-buttons div:hover{cursor:pointer;}
                 #mobile-header .searchform-wrapper .searchform #search-buttons div svg{fill:var(--wp--preset--color--text);}
                 #mobile-header .searchform-wrapper .searchform #search-buttons #open-searchbar--button{width:40px;height:36px;display:grid;place-content:center;}
                 #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:none;}
-                /* formulario */
+                /* formulario *
                 #mobile-header .searchform-wrapper .searchform input[type=text]{height:36px;width:0;padding:0;border:none;border-radius:0;background-color:transparent;}
             /* cabecera · mobile · caja de búsqueda · activa */
-            #mobile-header .searchform-wrapper.active{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:0;background-color:var(--wp--preset--color--background);box-shadow:0 1px 7px rgb(0 0 0 / 25%);z-index:4;}
-            #mobile-header .searchform-wrapper.active .searchform{position:relative;justify-content:flex-start;}
+            #mobile-header .searchform-wrapper{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:0;background-color:var(--wp--preset--color--background);box-shadow:0 1px 7px rgb(0 0 0 / 25%);z-index:4;}
+            #mobile-header .searchform-wrapper .searchform{position:relative;justify-content:flex-start;}
                 /* botones */
-                #mobile-header .searchform-wrapper.active .searchform #search-buttons{position:absolute;top:0;right:0;display:flex;}
-                #mobile-header .searchform-wrapper.active .searchform #search-buttons :is(#open-searchbar--button,#close-searchbar--button){width:54px;height:54px;display:grid;place-content:center;}
-                #mobile-header .searchform-wrapper.active .searchform #search-buttons div svg{fill:var(--wp--preset--color--attenuated);}
-                #mobile-header .searchform-wrapper.active .searchform #search-buttons #close-searchbar--button{display:grid;transition:all .3s ease;}
-                #mobile-header .searchform-wrapper.active .searchform #search-buttons #close-searchbar--button:hover{cursor:pointer;color:var(--wp--preset--color--text);}
+                #mobile-header .searchform-wrapper .searchform #search-buttons{position:absolute;top:0;right:0;display:flex;}
+                #mobile-header .searchform-wrapper .searchform #search-buttons :is(#open-searchbar--button,#close-searchbar--button){width:54px;height:54px;display:grid;place-content:center;}
+                #mobile-header .searchform-wrapper .searchform #search-buttons div svg{fill:var(--wp--preset--color--attenuated);}
+                #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:grid;transition:all .3s ease;}
+                #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button:hover{cursor:pointer;color:var(--wp--preset--color--text);}
                 /* formulario */
-                #mobile-header .searchform-wrapper.active .searchform input[type=text]{width:min(100% - 50px); height:54px; border-right:1px solid var(--wp--preset--color--border);background-color:var(--wp--preset--color-background-input);padding:0 54px 0 10px;font-family:'Roboto';font-size:16px;}
-                #mobile-header .searchform-wrapper.active .searchform input[type=text]:focus{outline:none;}
+                #mobile-header .searchform-wrapper .searchform input[type=text]{width:min(100% - 50px); height:54px; border-right:1px solid var(--wp--preset--color--border);background-color:var(--wp--preset--color-background-input);padding:0 54px 0 10px;font-family:'Roboto';font-size:16px;}
+                #mobile-header .searchform-wrapper .searchform input[type=text]:focus{outline:none;}
             /* menú mobile */
             .panel-overlay{position:fixed;width:100%;height:100%;top:0;left:-100%;z-index:7;opacity:0;background:rgb(61 70 81 / 90%);backdrop-filter:blur(20px);transition:opacity .3s ease;}
             .panel-overlay.show{left:0;opacity:1;}

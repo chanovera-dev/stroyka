@@ -54,7 +54,7 @@ function stroyka_theme_custom_global() {
                 #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:grid;transition:all .3s ease;}
                 #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button:hover{cursor:pointer;color:var(--wp--preset--color--text);}
                 /* formulario */
-                #mobile-header .searchform-wrapper .searchform input[type=text]{width:min(100% - 50px); height:54px; border-right:1px solid var(--wp--preset--color--border);background-color:var(--wp--preset--color-background-input);padding:0 54px 0 10px;font-family:'Roboto';font-size:16px;}
+                #mobile-header .searchform-wrapper .searchform input[type=text]{width:min(100% - 50px); height:54px; border:0 solid transparent; border-right:1px solid var(--wp--preset--color--border);background-color:var(--wp--preset--color-background-input);padding:0 54px 0 10px;font-family:'Roboto';font-size:16px;}
                 #mobile-header .searchform-wrapper .searchform input[type=text]:focus{outline:none;}
             /* menú mobile */
             .panel-overlay{position:fixed;width:100%;height:100%;top:0;left:-100%;z-index:7;opacity:0;background:rgb(61 70 81 / 90%);backdrop-filter:blur(20px);transition:opacity .3s ease;}

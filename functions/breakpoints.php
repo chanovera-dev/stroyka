@@ -103,6 +103,8 @@ function stroyka_theme_custom_breakpoints() {
             @media(max-width:574px) {
                 /* cabecera */
                     .wishlist-button{display:none;}
+                    /* menu mobile font size */
+                    #menu-mobile ul li a{font-size:15px;}
             }
 
             @media(min-width:575px){

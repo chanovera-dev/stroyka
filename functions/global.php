@@ -50,7 +50,7 @@ function stroyka_theme_custom_global() {
             #mobile-header .searchform-wrapper .searchform{position:relative;justify-content:flex-start;}
                 /* botones */
                 #mobile-header .searchform-wrapper .searchform #search-buttons{position:absolute;top:0;right:0;display:flex;}
-                #mobile-header .searchform-wrapper .searchform #search-buttons :is(#open-searchbar--button,#close-searchbar--button){width:54px;height:54px;display:grid;place-content:center;}
+                #mobile-header .searchform-wrapper .searchform #search-buttons :is(#searchbar--button,#close-searchbar--button){width:54px;height:54px;display:grid;place-content:center;}
                 #mobile-header .searchform-wrapper .searchform #search-buttons div svg{fill:var(--wp--preset--color--attenuated);}
                 #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:grid;transition:all .3s ease;}
                 #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button:hover{cursor:pointer;color:var(--wp--preset--color--text);}

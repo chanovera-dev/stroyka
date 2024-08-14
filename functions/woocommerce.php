@@ -145,5 +145,7 @@ add_action( 'wp', function() {
 // A N E X O S
 // Estilos particulares para los templates
 require_once(get_template_directory() . '/functions/woocommerce/woocommerce-templates.php');
-// Anexo para definir los contenedores de las listas de productos
-require_once(get_template_directory() . '/functions/woocommerce/woocommerce-loop.php');
+// contenedores y agregados para la plantilla de single product
+require_once(get_template_directory() . '/functions/woocommerce/single-product.php');
+// Anexo para definir el contador de la lista de deseos
+require_once(get_template_directory() . '/functions/woocommerce/wishlist.php');

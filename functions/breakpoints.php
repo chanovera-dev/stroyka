@@ -122,7 +122,7 @@ function stroyka_theme_custom_breakpoints() {
                         /* botones */
                         #mobile-header .searchform-wrapper .searchform #search-buttons{height:36px;position:absolute;top:0;right:0;}
                         #mobile-header .searchform-wrapper .searchform #search-buttons #searchbar--button{width:36px;height:36px;display:grid;place-content:center;}
-                        #mobile-header .searchform-wrapper .searchform #search-buttons #searchbar--button svg{fill:var(--wp--preset--color--attenuated);transition:all .3s ease;}
+                        #mobile-header .searchform-wrapper .searchform #search-buttons #searchbar--button svg{fill:rgb(0 0 0 / 30%);transition:all .3s ease;}
                         #mobile-header .searchform-wrapper .searchform #search-buttons #searchbar--button:hover svg{fill:var(--wp--preset--color--text);}
                         #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:none;}
                         /* formulario */

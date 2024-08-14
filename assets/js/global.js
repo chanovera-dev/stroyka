@@ -33,7 +33,7 @@ scrollPage();
 
 // muestra el botón de mostrar y oculta el cuadro de búsqueda cuando la resolución es menor a 767 px
 if (window.innerWidth < 767) {
-    const searchbarButtonOpen = document.getElementById('open-searchbar--button');
+    const searchbarButtonOpen = document.getElementById('open-searchform-mobile--button');
     const searchbarButtonClose = document.getElementById('close-searchbar--button');
     const searchForm = document.getElementById('searchform-wrapper');
   
@@ -162,13 +162,6 @@ function toggleSubMenu(button) {
             chevron.classList.remove('rotate');
         }
     });
-}
-
-// BOTÓN DEL SEARCHFORM
-// abrir el searchform mobile
-function openSearchformMobile() {
-    // agrega al menú la clase open, mostrándolo
-    document.querySelector('.searchform-wrapper').classList.add('active');
 }
 
 // F U N C I O N E S   D E L   M E N Ú   D E S K T O P

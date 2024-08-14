@@ -33,7 +33,7 @@ scrollPage();
 
 // muestra el botón de mostrar y oculta el cuadro de búsqueda cuando la resolución es menor a 767 px
 if (window.innerWidth < 767) {
-    const searchbarButtonOpen = document.getElementById('open-searchform-mobile--button');
+    const searchbarButtonOpen = document.getElementById('open-searchbar--button');
     const searchbarButtonClose = document.getElementById('close-searchbar--button');
     const searchForm = document.getElementById('searchform-wrapper');
   

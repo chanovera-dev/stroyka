@@ -2,7 +2,7 @@
 	<div class="searchform">
 		<input type="text" value="" name="s" id="s" class="input-search" placeholder="<?= __('Buscar', 'stroyka'); ?>">
         <div  id="search-buttons">
-            <div id="open-searchbar--button">
+            <div>
                 <svg width="20px" height="20px">
                     <use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#search-20"></use>
                 </svg>

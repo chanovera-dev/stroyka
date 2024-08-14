@@ -21,7 +21,7 @@
                         include(TEMPLATEPATH.'/parts/header/menu-button.php');
                         include(TEMPLATEPATH.'/parts/header/brand.php');
                         include(TEMPLATEPATH.'/parts/header/searchform-button.php');
-                        // get_search_form();
+                        get_search_form();
                         include(TEMPLATEPATH.'/parts/header/attachments.php');
                     ?>
                 </section>

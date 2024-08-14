@@ -32,19 +32,7 @@ function stroyka_theme_custom_global() {
             .attachment-list li .counter svg{fill:var(--wp--preset--color--text);}
             .attachment-list li .counter .wrapper{position:absolute;top:var(--position--counter);right:var(--position--counter);}
             .attachment-list li .counter .wrapper .number{display:grid;width:15px;height:15px;place-content:center;background-color:var(--wp--preset--color--background);border-radius:50%;color:var(--wp--preset--color--text);font-size:10px;}
-            /* cabecera · mobile · caja de búsqueda · inactiva *
-            #mobile-header .searchform-wrapper{width:40px;height:36px;border-radius:var(--border-radius--button);transition:all .3s ease;}
-            #mobile-header .searchform-wrapper:hover{background-color:#ffffff7a;}
-            #mobile-header .searchform-wrapper .searchform{display:flex;align-items:center;justify-content:center;}
-                /* botones *
-                #mobile-header .searchform-wrapper .searchform #search-buttons div{transition:all .3s ease;}
-                #mobile-header .searchform-wrapper .searchform #search-buttons div:hover{cursor:pointer;}
-                #mobile-header .searchform-wrapper .searchform #search-buttons div svg{fill:var(--wp--preset--color--text);}
-                #mobile-header .searchform-wrapper .searchform #search-buttons #open-searchbar--button{width:40px;height:36px;display:grid;place-content:center;}
-                #mobile-header .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:none;}
-                /* formulario *
-                #mobile-header .searchform-wrapper .searchform input[type=text]{height:36px;width:0;padding:0;border:none;border-radius:0;background-color:transparent;}
-            /* cabecera · mobile · caja de búsqueda · activa */
+            /* cabecera · mobile · caja de búsqueda */
             #mobile-header .searchform-wrapper{position:absolute;top:-100%;left:0;width:100%;height:100%;border-radius:0;background-color:var(--wp--preset--color--background);z-index:4;transition:all .3s ease;}
             #mobile-header .searchform-wrapper.active{top:0;box-shadow:0 1px 7px rgb(0 0 0 / 25%);}
             #mobile-header .searchform-wrapper .searchform{position:relative;justify-content:flex-start;}

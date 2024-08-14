@@ -1,7 +1,7 @@
 <ul class="attachment-list">
     <?php
         if(is_plugin_active('yith-woocommerce-wishlist/init.php')) {
-            echo '<li>'.do_shortcode('[yith_wcwl_items_count]').'</li>';
+            echo '<li class="wishlist-button">'.do_shortcode('[yith_wcwl_items_count]').'</li>';
         } else {
             // echo '<li>'.esc_html__('La wishlist está desactivada').'</li>';
         }

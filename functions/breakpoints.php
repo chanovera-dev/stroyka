@@ -6,6 +6,7 @@ function stroyka_theme_custom_breakpoints() {
             :root{
                 /* media queries */
                 --breakpoint:min(100% - 30px, 575px);
+                --breakpoint-without-padding:min(100%, 575px);
 
                 /* inputs y botones */
                 --border-radius--button:2px;
@@ -103,13 +104,20 @@ function stroyka_theme_custom_breakpoints() {
                 :root{
                     /* media queries */
                     --breakpoint:min(100% - 30px, 510px);
+                    --breakpoint-without-padding:min(100%, 510px);
                 }
+            }
+
+            @media(max-width:575px) {
+                /* cabecera */
+                    .wishlist-button{display:none;}
             }
 
             @media(min-width:768px){
                 :root{
                     /* media queries */
                     --breakpoint:min(100% - 30px, 690px);
+                    --breakpoint-without-padding:min(100%, 690px);
 
                     /* pie de página */
                     --text-align--footer:left;
@@ -213,6 +221,7 @@ function stroyka_theme_custom_breakpoints() {
                 :root{
                     /* media queries */
                     --breakpoint:min(100% - 30px, 930px);
+                    --breakpoint-without-padding:min(100%, 930px);
                     --grid-columns--middle-bar:225px 475px 1fr;
                     --grid-columns--bottom-bar:220px 1fr auto;
                     --width-attachments:46.75px;
@@ -280,6 +289,7 @@ function stroyka_theme_custom_breakpoints() {
                 :root{
                     /* media queries */
                     --breakpoint:min(100% - 30px, 1110px);
+                    --breakpoint-without-padding:min(100% -30px, 1110px);
                     --grid-columns--middle-bar:270px 603.4px 1fr;
                     --grid-columns--bottom-bar:255px 1fr auto;
                     --width-attachments:50.75px;

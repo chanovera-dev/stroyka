@@ -62,11 +62,11 @@ function stroyka_theme_custom_global() {
                 #menu-mobile::-webkit-scrollbar,
                 .menu-mobile::-webkit-scrollbar{display:none;}
                 #menu-mobile ul{padding:0;}
-                #menu-mobile ul li a{padding:0 20px;display:flex;align-items:center;height:48px;color:var(--wp--preset--color--text);border-bottom:1px solid var(--wp--preset--color--border);border-radius:0;font-size:15px;}
+                #menu-mobile ul li a{padding:0 20px;display:flex;align-items:center;height:48px;color:var(--wp--preset--color--text);border-bottom:1px solid var(--wp--preset--color--line);border-radius:0;font-size:15px;}
                 /* submenús */
                 #menu-mobile > ul li.menu-item-has-children{position:relative;}
                     /* botón */
-                    #menu-mobile > ul li.menu-item-has-children .mobile-links__item-toggle{position:absolute;top:0;right:0;width:48px;height:48px;background-color:var(--wp--preset--color--background);border:none;border-left:1px solid var(--wp--preset--color--border);border-bottom:1px solid var(--wp--preset--color--border);border-radius:0;}
+                    #menu-mobile > ul li.menu-item-has-children .mobile-links__item-toggle{position:absolute;top:0;right:0;width:48px;height:48px;background-color:var(--wp--preset--color--background);border:none;border-left:1px solid var(--wp--preset--color--line);border-bottom:1px solid var(--wp--preset--color--line);border-radius:0;}
                     #menu-mobile > ul li.menu-item-has-children .mobile-links__item-toggle svg{transition:all .3s ease;}
                     #menu-mobile > ul li.menu-item-has-children .mobile-links__item-toggle.rotate svg{transform:rotate(180deg);}
                     /* submenú */

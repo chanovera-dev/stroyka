@@ -14,7 +14,7 @@ function stroyka_theme_custom_global() {
             /* C A B E C E R A */
             #mobile-header{position:sticky;top:0;background:var(--wp--preset--color--primary-color-emphasis);z-index:2;}
             #mobile-header .header-content{display:flex;align-items:center;justify-content:space-between;height:54px;}
-            #mobile-header .header-content .site-brand{margin-left:8px;}
+            #mobile-header .header-content .site-brand{margin:0 15px;}
             #mobile-header .header-content .site-brand .custom-logo{width:120px;}
             #mobile-header .header-content .searchform-wrapper{margin-left:auto;}
             /* estilos al hacer scroll */

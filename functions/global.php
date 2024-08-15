@@ -70,9 +70,20 @@ function stroyka_theme_custom_global() {
                     #menu-mobile > ul li.menu-item-has-children .mobile-links__item-toggle svg{transition:all .3s ease;}
                     #menu-mobile > ul li.menu-item-has-children .mobile-links__item-toggle.rotate svg{transform:rotate(180deg);}
                     /* submenú */
-                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu{max-height:0;transition:all .4s ease;overflow:hidden;}
+                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu{
+                        visibility: hidden;
+                        overflow: hidden;
+                        height: 0;
+                        opacity: 0;
+                        transition: height .3s,opacity .3s,visibility 0s .3s;
+                    }
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li a{font-size:14px;height:40px;background-color:#f7f7f7;}
-                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open{max-height:2500px;}
+                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open{
+                        visibility: visible;
+                        height: auto;
+                        opacity: 1;
+                        transition-delay: 0s,0s,0s;
+                    }
             /* top bar */
             .top-bar--wrapper{background-color:var(--wp--preset--color--background-top-bar);}
             .top-bar{display:flex;justify-content:space-between;}

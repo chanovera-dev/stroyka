@@ -73,8 +73,8 @@ function stroyka_theme_custom_global() {
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu{
                         overflow: hidden;
                         max-height: 0;
-                        -webkit-transition: all 0.5s ease-out;
-                        transition: all 0.5s ease-out;
+                        -webkit-transition: all 0.3s ease-out;
+                        transition: all 0.3s ease-out;
                     }
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li a{font-size:14px;height:40px;background-color:#f7f7f7;}
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open{

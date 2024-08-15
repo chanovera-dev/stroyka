@@ -74,7 +74,7 @@ function stroyka_theme_custom_global() {
                         visibility: hidden;
                         overflow: hidden;
                         max-height: 0;
-                        
+                        opacity: 0;
                         transition: max-height .3s,opacity .3s,visibility 0s .3s;
                     }
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li a{font-size:14px;height:40px;background-color:#f7f7f7;}

@@ -64,7 +64,7 @@ function stroyka_theme_custom_global() {
                 #menu-mobile ul{padding:0;}
                 #menu-mobile ul li a{padding:0 20px;display:flex;align-items:center;height:48px;color:var(--wp--preset--color--text);border-bottom:1px solid var(--wp--preset--color--line);border-radius:0;}
                 #menu-mobile ul li ul li a{padding-left:40px;}
-                #menu-mobile ul li ul li ul li a{padding-left:60px;}
+                #menu-mobile ul li ul li ul li a{padding-left:60px;border-bottom:1px solid #e3e3e3;}
                 /* submenús */
                 #menu-mobile > ul li.menu-item-has-children{position:relative;}
                     /* botón */
@@ -81,7 +81,7 @@ function stroyka_theme_custom_global() {
                         transition: all 0.3s ease-out;
                     }
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li a{font-size:14px;height:40px;background-color:#f7f7f7;}
-                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li ul.sub-menu li a{background-color:#e7e7e7;}
+                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li ul.sub-menu li a{background-color:#f0f0f0;}
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open,
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open li.menu-item-has-children > ul.sub-menu.open{
                         display: block;

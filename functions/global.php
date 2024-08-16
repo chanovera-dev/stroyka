@@ -70,14 +70,16 @@ function stroyka_theme_custom_global() {
                     #menu-mobile > ul li.menu-item-has-children .mobile-links__item-toggle svg{transition:all .3s ease;}
                     #menu-mobile > ul li.menu-item-has-children .mobile-links__item-toggle.rotate svg{transform:rotate(180deg);}
                     /* submenú */
-                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu{
+                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu,
+                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li.menu-item-has-children > ul.sub-menu{
                         overflow: hidden;
                         max-height: 0;
                         -webkit-transition: all 0.3s ease-out;
                         transition: all 0.3s ease-out;
                     }
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu li a{font-size:14px;height:40px;background-color:#f7f7f7;}
-                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open{
+                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open,
+                    #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open li.menu-item-has-children > ul.sub-menu.open{
                         display: block;
                         max-height: 200px;
                     }

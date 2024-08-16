@@ -151,11 +151,11 @@ function stroyka_theme_custom_global() {
                 .bottom-bar .departments-button .departments__button-arrow.rotate{transform:rotate(180deg);}
                     /* botón de comprar por categorías · lista */
                     .bottom-bar .categories-list-wrapper{position:relative;}
-                    .bottom-bar .categories-list-wrapper .categories-list{position:absolute;left:0;top:42px;background-color:var(--wp--preset--color--text);padding:0;width:100%;max-height:0;overflow:hidden;transition:all .3s ease;}
+                    .bottom-bar .categories-list-wrapper .categories-list{position:absolute;left:0;top:39px;background-color:var(--wp--preset--color--text);padding:0;width:100%;max-height:0;overflow:hidden;transition:all .3s ease;}
                     .bottom-bar .categories-list-wrapper .categories-list li a{font-weight:400;position:relative;display:block;padding:10px 16px;color:#fff;font-size:14px;line-height:16px;letter-spacing:.02em;transition:all .3s ease;}
                     .bottom-bar .categories-list-wrapper .categories-list li a:hover{background-color:#525d66;}
                     /* botón de comprar por categorías · lista abierta */
-                    .bottom-bar .categories-list-wrapper .categories-list.open{background-color:var(--wp--preset--color--text);padding:6px 0;height:416px;max-height:416px;overflow-y:scroll;}
+                    .bottom-bar .categories-list-wrapper .categories-list.open{background-color:var(--wp--preset--color--text);padding:9px 0 6px;height:419px;max-height:419px;overflow-y:scroll;}
                     .bottom-bar .categories-list-wrapper .categories-list.open::-webkit-scrollbar{display:none;}     
                 /* menú */
                 .bottom-bar nav{margin:0 18px;}

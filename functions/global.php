@@ -62,7 +62,7 @@ function stroyka_theme_custom_global() {
                 #menu-mobile::-webkit-scrollbar,
                 .menu-mobile::-webkit-scrollbar{display:none;}
                 #menu-mobile ul{padding:0;}
-                #menu-mobile ul li a{padding:12px 20px;display:flex;align-items:center;color:var(--wp--preset--color--text);border-bottom:1px solid var(--wp--preset--color--line);border-radius:0;}
+                #menu-mobile ul li a{padding:0 20px;display:flex;align-items:center;height:48px;color:var(--wp--preset--color--text);border-bottom:1px solid var(--wp--preset--color--line);border-radius:0;}
                 /* submenús */
                 #menu-mobile > ul li.menu-item-has-children{position:relative;}
                     /* botón */

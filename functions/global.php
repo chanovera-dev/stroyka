@@ -112,7 +112,7 @@ function stroyka_theme_custom_global() {
                 .searchform-wrapper{width:100%;height:36px;}
                 .searchform-wrapper .searchform{position:relative;display:inherit;}
                 .searchform-wrapper .searchform #search-buttons{height:42px;position:absolute;top:0;right:0;}
-                .searchform-wrapper .searchform #search-buttons #open-searchbar--button{width:42px;height:42px;display:grid;place-content:center;fill:var(--wp--preset--color--attenuated);}
+                .searchform-wrapper .searchform #search-buttons #searchbar--button{width:42px;height:42px;display:grid;place-content:center;fill:var(--wp--preset--color--attenuated);}
                 .searchform-wrapper .searchform #search-buttons #close-searchbar--button{display:none;}
                 .searchform-wrapper .searchform input[type=text]{height:42px;width:100%;padding:0;border:2px solid #e3e3e3;padding:0 42px 0 10px;border-radius:var(--border-radius--button);background-color:#ffffff7a;font-size:16px;transition:all .3s ease;}
                 .searchform-wrapper .searchform input[type=text]:hover{border:2px solid #d4d4d4;}

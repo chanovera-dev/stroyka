@@ -206,7 +206,7 @@ function stroyka_theme_custom_breakpoints() {
                     #main .container .arrivals.slideshow.section .slideshow-products--wrapper .woocommerce .products{width:300%;}
             }
 
-            @media screen and (min-width: 0px) and (max-width: 990px){
+            @media screen and (min-width: 0px) and (max-width: 991px){
                 #desktop-header,
                 #desktop-main-header{display:none;}
             }
@@ -220,7 +220,7 @@ function stroyka_theme_custom_breakpoints() {
                     #main .container .best-selling.section .woocommerce .products .product:nth-child(1) .products-list__item .woocommerce-LoopProduct-link.woocommerce-loop-product__link{grid-row:1/4;}
             }
 
-            @media(min-width:991px){
+            @media(min-width:992px){
                 :root{
                     /* media queries */
                     --breakpoint:min(100% - 30px, 930px);

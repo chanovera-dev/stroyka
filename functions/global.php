@@ -121,7 +121,7 @@ function stroyka_theme_custom_global() {
                 .searchform-wrapper .searchform input[type=text]:focus::placeholder{color:var(--wp--preset--color--attenuated);}
                 /* customer service */
                 #customer-service-phone{text-align:right;}
-                #customer-service-phone p:nth-child(1){font-size:15px;margin-bottom:3px;color:#999;}
+                #customer-service-phone p:nth-child(1){font-size:15px;line-height:1.3;color:#999;}
                 #customer-service-phone p span{font-size:20px;font-weight:700;color:var(--wp--preset--color--text);}
             /* bottom bar */
             #desktop-main-header{background-color:var(--wp--preset--color--primary-color-emphasis);position:sticky;top:0;z-index:2;}

@@ -157,7 +157,7 @@ function stroyka_theme_custom_global() {
                     .bottom-bar .categories-list-wrapper .categories-list.open{background-color:var(--wp--preset--color--text);padding:6px 0;height:416px;max-height:416px;overflow-y:scroll;}
                     .bottom-bar .categories-list-wrapper .categories-list.open::-webkit-scrollbar{display:none;}     
                 /* menú */
-                .bottom-bar nav{margin:0 14px 0 8px;}
+                .bottom-bar nav{margin:0 18px;}
                 .bottom-bar nav ul{display:flex;align-items:center;}
                 .bottom-bar nav > ul > li{position:relative;display:flex;align-items:center;height:54px;}
                 .bottom-bar nav ul li a{font-size:15px;font-weight:600;color:var(--wp--preset--color--text);display:flex;align-items:center;height:42px;border-radius:var(--border-radius--button);padding:0 14px;transition:all .3s ease;}

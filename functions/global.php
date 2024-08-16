@@ -81,7 +81,7 @@ function stroyka_theme_custom_global() {
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open,
                     #menu-mobile > ul li.menu-item-has-children > ul.sub-menu.open li.menu-item-has-children > ul.sub-menu.open{
                         display: block;
-                        max-height: 200px;
+                        max-height: 2200px;
                     }
             /* top bar */
             .top-bar--wrapper{background-color:var(--wp--preset--color--background-top-bar);}

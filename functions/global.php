@@ -137,6 +137,7 @@ function stroyka_theme_custom_global() {
                     justify-content:space-between;
                     background-color:var(--wp--preset--color--text);
                     border:var(--wp--preset--color--text);
+                    border-radius: 3px;
                     color:#fff;
                     fill:#859ba6;
                     font-size:15px;

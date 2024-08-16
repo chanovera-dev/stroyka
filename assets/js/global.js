@@ -141,32 +141,32 @@ function menuMobileWithChildrens() {
 menuMobileWithChildrens();
 
 // función toggle para el botón del submenú mobile
-function toggleSubMenu(button) {
-    let parentLi = button.closest('li');
-    let subMenu = parentLi.querySelector('.sub-menu');
-    let chevrons = document.querySelectorAll('.mobile-links__item-toggle');
+// function toggleSubMenu(button) {
+//     let parentLi = button.closest('li');
+//     let subMenu = parentLi.querySelector('.sub-menu');
+//     let chevrons = document.querySelectorAll('.mobile-links__item-toggle');
 
-    // Cerrar todos los demás submenús
-    let allSubMenus = document.querySelectorAll('.sub-menu');
-    allSubMenus.forEach((menu) => {
-        if (menu !== subMenu && menu.classList.contains('open')) {
-            menu.classList.remove('open');
-        }
-    });
+//     // Cerrar todos los demás submenús
+//     let allSubMenus = document.querySelectorAll('.sub-menu');
+//     allSubMenus.forEach((menu) => {
+//         if (menu !== subMenu && menu.classList.contains('open')) {
+//             menu.classList.remove('open');
+//         }
+//     });
 
-    // Alternar la clase 'open' para el submenú actual
-    subMenu.classList.toggle('open');
+//     // Alternar la clase 'open' para el submenú actual
+//     subMenu.classList.toggle('open');
 
-    // Alternar la clase 'rotate' para el botón actual
-    button.classList.toggle('rotate');
+//     // Alternar la clase 'rotate' para el botón actual
+//     button.classList.toggle('rotate');
 
-    // Quitar la clase 'rotate' de los demás elementos con la clase '.mobile-links__item-toggle'
-    chevrons.forEach((chevron) => {
-        if (chevron !== button && chevron.classList.contains('rotate')) {
-            chevron.classList.remove('rotate');
-        }
-    });
-}
+//     // Quitar la clase 'rotate' de los demás elementos con la clase '.mobile-links__item-toggle'
+//     chevrons.forEach((chevron) => {
+//         if (chevron !== button && chevron.classList.contains('rotate')) {
+//             chevron.classList.remove('rotate');
+//         }
+//     });
+// }
 
 // F U N C I O N E S   D E L   M E N Ú   D E S K T O P
 

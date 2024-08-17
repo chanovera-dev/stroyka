@@ -288,6 +288,13 @@ function stroyka_theme_custom_breakpoints() {
                     #main .container .arrivals.slideshow.section .slideshow-products--wrapper .woocommerce .products{width:200%;}
             }
 
+            @media screen and (min-width: 992px) and (max-width: 1199px){
+                .feature-cell{grid-template-columns:1fr;}
+                .feature-cell svg{grid-column:1/-1;grid-row:1/2;}
+                .feature-cell h2{grid-column:1/-1;grid-row:2/3;}
+                .feature-cell p{grid-column:3/4;}
+            }
+
             @media(min-width:1199px){
                 :root{
                     /* media queries */

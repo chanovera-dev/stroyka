@@ -289,10 +289,11 @@ function stroyka_theme_custom_breakpoints() {
             }
 
             @media screen and (min-width: 992px) and (max-width: 1199px){
-                .feature-cell{grid-template-columns:1fr;}
-                .feature-cell svg{grid-column:1/-1;grid-row:1/2;}
-                .feature-cell h2{grid-column:1/-1;grid-row:2/3;}
-                .feature-cell p{grid-column:3/4;}
+                .feature-cell{grid-template-columns:1fr;text-align:center;}
+                .feature-cell > a{grid-template-columns:1fr;}
+                .feature-cell svg{grid-column:inherit;grid-row:inherit;margin-inline:auto;}
+                .feature-cell h2{grid-column:inherit;grid-row:inherit;}
+                .feature-cell p{grid-column:inherit;grid-row:inherit;}
             }
 
             @media(min-width:1199px){

@@ -149,3 +149,5 @@ require_once(get_template_directory() . '/functions/woocommerce/woocommerce-temp
 require_once(get_template_directory() . '/functions/woocommerce/single-product.php');
 // Anexo para definir el contador de la lista de deseos
 require_once(get_template_directory() . '/functions/woocommerce/wishlist.php');
+// Anexo para definir los contenedores de las listas de productos
+require_once(get_template_directory() . '/functions/woocommerce/woocommerce-loop.php');

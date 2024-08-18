@@ -92,26 +92,26 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'valoraciones_personalizad
     remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
 
     // Añade la etiqueta de precio final
-     add_action('woocommerce_after_shop_loop_item_title', 'custom_display_final_price', 10);
-     function custom_display_final_price() {
-         global $product;
-        
-         // Obtiene el precio final
-         // $final_price = wc_get_price_to_display($product);
-         // Verifica si el producto tiene variaciones
-        if ($product->is_type('variable')) {
-            // Obtener los precios de las variaciones
-            $prices = $product->get_variation_prices();
-            // Obtener el precio más alto
-            $highest_price = max($prices['price']);
-        } else {
-            // Si el producto no tiene variaciones, obtener el precio regular
-            $highest_price = $product->get_price();
-        }
+    // add_action('woocommerce_after_shop_loop_item_title', 'custom_display_final_price', 10);
+    // function custom_display_final_price() {
+    //     global $product;
+       
+    //     // Obtiene el precio final
+    //     // $final_price = wc_get_price_to_display($product);
+    //     // Verifica si el producto tiene variaciones
+    //    if ($product->is_type('variable')) {
+    //        // Obtener los precios de las variaciones
+    //        $prices = $product->get_variation_prices();
+    //        // Obtener el precio más alto
+    //        $highest_price = max($prices['price']);
+    //    } else {
+    //        // Si el producto no tiene variaciones, obtener el precio regular
+    //        $highest_price = $product->get_price();
+    //    }
 
-         // Muestra el precio final
-         echo '<span class="price">' . wc_price($highest_price) . '</span>';
-     }
+    //     // Muestra el precio final
+    //     echo '<span class="price">' . wc_price($highest_price) . '</span>';
+    // }
 
 
 
@@ -122,9 +122,9 @@ function contenedor_arriba_agregar_carrito() {
 add_action('woocommerce_after_shop_loop_item', 'contenedor_arriba_agregar_carrito', 9);
 // cerrar contenedor para el botón de agregar carrito y para el de agregar a la wishlist
 function contenedor_debajo_agregar_wishlist() {
-    // if(is_plugin_active('yith-woocommerce-wishlist/init.php')) {
-    //     do_shortcode( '[yith_wcwl_add_to_wishlist]' );
-    // }
+    if(is_plugin_active('yith-woocommerce-wishlist/init.php')) {
+        do_shortcode( '[yith_wcwl_add_to_wishlist]' );
+    }
     echo '</div>';
 }
 add_action('woocommerce_after_shop_loop_item', 'contenedor_debajo_agregar_wishlist', 11);

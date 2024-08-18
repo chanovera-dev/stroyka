@@ -122,9 +122,9 @@ function contenedor_arriba_agregar_carrito() {
 add_action('woocommerce_after_shop_loop_item', 'contenedor_arriba_agregar_carrito', 9);
 // cerrar contenedor para el botón de agregar carrito y para el de agregar a la wishlist
 function contenedor_debajo_agregar_wishlist() {
-    if(is_plugin_active('yith-woocommerce-wishlist/init.php')) {
-        do_shortcode( '[yith_wcwl_add_to_wishlist]' );
-    }
+    // if(is_plugin_active('yith-woocommerce-wishlist/init.php')) {
+    //     do_shortcode( '[yith_wcwl_add_to_wishlist]' );
+    // }
     echo '</div>';
 }
 add_action('woocommerce_after_shop_loop_item', 'contenedor_debajo_agregar_wishlist', 11);

@@ -8,7 +8,7 @@
         include(TEMPLATEPATH . '/parts/frontpage/featured-products.php');
         include(TEMPLATEPATH . '/parts/frontpage/catalog.php');
         include(TEMPLATEPATH . '/parts/frontpage/bestsellers.php');
-        include(TEMPLATEPATH . '/parts/frontpage/categories.php');
+        // include(TEMPLATEPATH . '/parts/frontpage/categories.php');
         include(TEMPLATEPATH . '/parts/frontpage/arrivals.php');
         $ofertas = wc_get_product_ids_on_sale(); if (empty($ofertas)) : else : include(TEMPLATEPATH . '/parts/frontpage/sale-products.php'); endif;
         if ( get_posts() == null ) : else: include(TEMPLATEPATH . '/parts/frontpage/blog.php'); endif;

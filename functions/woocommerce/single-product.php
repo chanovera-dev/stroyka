@@ -76,17 +76,17 @@ add_action('woocommerce_single_product_summary', 'contenedor_despues_carrito', 3
 
 
 // Quitar el rango de precios de los productos variables en woocommerce
-function dcms_variation_price_format( $price, $product ) {
+// function dcms_variation_price_format( $price, $product ) {
 
-	$min_price = $product->get_variation_price( 'min' );
-	$max_price = $product->get_variation_price( 'max' );
+// 	$min_price = $product->get_variation_price( 'min' );
+// 	$max_price = $product->get_variation_price( 'max' );
 
-	$result_price = wc_price( $min_price );
+// 	$result_price = wc_price( $min_price );
 
-    if ( $min_price !== $max_price ) {
-		$result_price = sprintf();
-	}
+//     if ( $min_price !== $max_price ) {
+// 		$result_price = sprintf();
+// 	}
 
-    return $result_price;
-}
-add_filter( 'woocommerce_variable_price_html', 'dcms_variation_price_format', 10, 2 );
+//     return $result_price;
+// }
+// add_filter( 'woocommerce_variable_price_html', 'dcms_variation_price_format', 10, 2 );

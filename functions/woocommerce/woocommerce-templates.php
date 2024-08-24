@@ -196,6 +196,14 @@ function cart_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'cart_styles' );
 
+// Estilos para la página Wishlist
+function wishlist_styles() {
+    if ( is_page_template('wishlist-template.php') ) {
+        wp_enqueue_style( 'wishlist-styles', get_template_directory_uri() . '/assets/css/woocommerce/wishlist.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'wishlist_styles' );
+
 // Estilos para la página checkout
 function checkout_styles() {
     if ( is_page_template('checkout.php') ) {

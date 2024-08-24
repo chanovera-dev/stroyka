@@ -71,6 +71,46 @@ function template_redirect_action() {
             wp_enqueue_style( 'forms-styles', get_template_directory_uri() . '/assets/css/forms.css' ); 
             return array_merge( $classes, array( $tipo ) );
         } );
+
+
+
+        // unhook the WooCommerce wrappers
+        remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+        remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+        // crea contenedores para envolver antes de el breadcrumbs hasta después de la sidebar
+        add_action('woocommerce_before_main_content', 'pinplast_wrapper_start', 10);
+        add_action('woocommerce_sidebar', 'pinplast_wrapper_end', 10);
+
+        // antes del breadcrumb
+        function pinplast_wrapper_start() {
+            echo '<main id="main">';
+        }
+        // después de la sidebar original, termina en posición 10
+        function pinplast_wrapper_end() {
+            echo '</main>';
+        }
+
+        // contenedor para el breadcrumb · apertura
+        function contenedor_antes_breadcrumbs() {
+            echo '<div class="container"><section class="section">';
+        }
+        add_action('woocommerce_before_main_content', 'contenedor_antes_breadcrumbs', 19);
+        // contenedor para el breadcrumb · cierre
+        function contenedor_despues_breadcrumbs() {
+            echo '</section></div>';
+        }
+        add_action('woocommerce_before_main_content', 'contenedor_despues_breadcrumbs', 21);
+
+        // contenedor para las notificaciones · apertura
+        function contenedor_antes_notificaciones() {
+            echo '<div class="container notices"><section class="section">';
+        }
+        add_action('woocommerce_before_single_product', 'contenedor_antes_notificaciones', 5);
+        // contenedor para las notificaciones · cierre
+        function contenedor_despues_notificaciones() {
+            echo '</section></div>';
+        }
+        add_action('woocommerce_before_single_product', 'contenedor_despues_notificaciones', 11);
     }
 }
 

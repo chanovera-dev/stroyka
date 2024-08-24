@@ -17,8 +17,8 @@ main .container .section h1{font-size:30px; color:var(--wp--preset--color--text)
     text-transform:lowercase;
     height:46px;
     padding:0 14px;
-    border: 1px solid var(--wp--preset--color--yellow);
-    background-color: var(--wp--preset--color--yellow);
+    border: 1px solid var(--wp--preset--color--primary-color-emphasis);
+    background-color: var(--wp--preset--color--primary-color-emphasis);
     color:var(--wp--preset--color--text);
     font-size: 16px;
     border-radius:2px;
@@ -65,8 +65,8 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
     padding:0 15px;
     font-size:16px;
     border-radius:2px!important; 
-    background-color:var(--wp--preset--color--yellow);
-    border:1px solid var(--wp--preset--color--yellow);
+    background-color:var(--wp--preset--color--primary-color-emphasis);
+    border:1px solid var(--wp--preset--color--primary-color-emphasis);
     color:var(--wp--preset--color--text)!important;
     font-weight:700;
     transition:all .3s ease;
@@ -90,7 +90,7 @@ table tbody tr td.product-quantity .quantity input[type=number].qty:focus{outlin
 .coupon{display:grid; grid-template-columns:1fr 1fr; gap:9px;}
 .coupon input{font-size:16px; width:100%;}
 .coupon input.input-text{border:1px solid var(--wp--preset--color--line); padding: 0 10px; transition:all .3s ease;}
-.coupon input.input-text:focus{outline:none; border:1px solid var(--wp--preset--color--yellow);}
+.coupon input.input-text:focus{outline:none; border:1px solid var(--wp--preset--color--primary-color-emphasis);}
 .coupon label{display:none;}
 /* tabla de totales */
 .cart-collaterals{margin-top:50px; padding:20px; border:1px solid var(--wp--preset--color--line);}

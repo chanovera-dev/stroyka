@@ -28,7 +28,7 @@ main .container .section h1{font-size:30px; color:var(--wp--preset--color--text)
     .page-template-wishlist-template .wishlist_table.mobile li .item-details table.item-details-table :is(td.label, td.value),
     .page-template-wishlist-template .wishlist_table.mobile li :is(td.label, td.value){font-size:15px; padding:0;}
     .page-template-wishlist-template .wishlist_table .product-add-to-cart{padding:0 12px;}
-    .page-template-wishlist-template .wishlist_table .product-add-to-cart a{margin:0; display:grid!important; place-content:center; height:38px; font-weight:700; background-color:var(--wp--preset--color--yellow); color:var(--wp--preset--color--text);}
+    .page-template-wishlist-template .wishlist_table .product-add-to-cart a{margin:0; display:grid!important; place-content:center; height:38px; font-weight:700; background-color:var(--wp--preset--color--primary-color-emphasis); color:var(--wp--preset--color--text);}
     .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper .product-remove{padding:9px 12px;}
     .page-template-wishlist-template .wishlist_table.mobile li .additional-info-wrapper .product-remove a{color:var(--wp--preset--color--text)}
 }
@@ -70,6 +70,6 @@ main .container .section h1{font-size:30px; color:var(--wp--preset--color--text)
     .page-template-wishlist-template table.wishlist_table thead th{border-top:none; height:56px;}
     .page-template-wishlist-template .wishlist_table .product-stock-status span.wishlist-in-stock{padding:3px 6px; background-color:var(--wp--preset--color--green); font-size:13px; color:#fff;}
     .page-template-wishlist-template .wishlist_table tr td.product-thumbnail a img{width:80px;}
-    .page-template-wishlist-template .wishlist_table .product-add-to-cart a{margin:0!important; display:block!important; background-color:var(--wp--preset--color--yellow); border:1px solid var(--wp--preset--color--yellow); color:var(--wp--preset--color--text); font-weight:500; padding:6px 16px; transition:all .3s ease;}
+    .page-template-wishlist-template .wishlist_table .product-add-to-cart a{margin:0!important; display:block!important; background-color:var(--wp--preset--color--primary-color-emphasis); border:1px solid var(--wp--preset--color--primary-color-emphasis); color:var(--wp--preset--color--text); font-weight:500; padding:6px 16px; transition:all .3s ease;}
     .page-template-wishlist-template .wishlist_table .product-add-to-cart a:hover{background-color:var(--wp--preset--color--text); border:1px solid var(--wp--preset--color--text); color:#fff;}
 }

@@ -188,7 +188,7 @@ function stroyka_theme_custom_global() {
 
             /* P I E   D E   P Á G I N A */
             /* pie de página */
-            #main-footer{position:relative;text-align:var(--text-align--footer);padding-top:16px;}
+            #main-footer{position:relative;text-align:var(--text-align--footer);padding-top:16px;font-size:15px;}
                 /* general de widgets */
                 .footer-widgets--wrapper{border-top:1px solid var(--wp--preset--color--line);}
                     .footer-widgets{padding:48px 0 54px;display:grid;gap:42px;grid-template-columns:var(--grid-footer--widgets);}

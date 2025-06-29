@@ -84,10 +84,6 @@
         right: 0;
     }
 
-    .related.products {
-        width: 100%;
-    }
-
     .related.products > h2 {
         margin: 0;
         width: var(--breakpoint);
@@ -114,10 +110,6 @@
 
 @media (min-width: 1024px) {
 
-    .slideshow-products--wrapper .woocommerce {
-        width: 100%;
-    }
-
     .slideshow-products--wrapper .woocommerce .products {
         width: 200%;
     }
@@ -131,10 +123,6 @@
 
     .related.products > h2 {
         width: 100%;
-    }
-
-    .slideshow-products--wrapper .woocommerce {
-        width: calc(100% + 14px);
     }
 
     .slideshow-products--wrapper .woocommerce .products {

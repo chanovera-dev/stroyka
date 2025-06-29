@@ -1,0 +1,195 @@
+@media (max-width: 767px) {
+    .site-main .block .content.content-bestsellers {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .site-main .block .content.content-bestsellers .products .product:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .woocommerce-loop-product__link .attachment-woocommerce_thumbnail,
+    .site-main .block .content.content-bestsellers .products .product:first-child .woocommerce-loop-product__link .woocommerce-placeholder.wp-post-image {
+        width: 162px;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__info {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 192px;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__info > :nth-child(1) {
+        padding: var(--padding-loop) 0;
+        border-right: 1px solid var(--separator);
+        height: calc(100% - 2px);
+        position: relative;
+        top: 1px;
+        display: block;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child:hover .product-card__info > :nth-child(1) {
+        height: calc(100% - 4px);
+        top: 2px;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child:hover .product-card__info > :nth-child(1) > * {
+        position: relative;
+        top: -1px;
+    }  
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__info > :nth-child(1) .excerpt {
+        margin-top: 13px;
+        max-height: 100px;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__info > :nth-child(2) .availability {
+        display: block;
+    } 
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__buttons {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 190px;
+        background-color: transparent;
+        padding: var(--padding-loop);
+        padding-top: 0;
+        padding-bottom: 0;
+        max-height: 300px;
+        overflow: hidden;
+        z-index: 1;
+        border: none;
+        transition: none .3s ease-in-out;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child:hover .product-card__buttons {
+        width: 190px;
+        bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        border: none;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__buttons :is(.add_to_cart_button) {
+        font-size: .875rem;
+        height: calc(1.875rem + 2px);
+        line-height: 1.25;
+        padding: .375rem 1rem;
+        font-weight: 500;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__buttons .yith-wcwl-add-to-wishlist-button.yith-wcwl-add-to-wishlist-button--anchor {
+        width: calc(1.875rem + 2px);
+        height: calc(1.875rem + 2px);
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .price {
+        font-size: 18px;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__buttons {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+    }
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__buttons :is(.add_to_cart_button) {
+        max-height: 100px;
+        border-radius: 2px;
+        background: var(--btn-secondary);
+        border-color: var(--btn-secondary);
+        color: var(--text);
+        width: 100%;
+        justify-content: center;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__buttons :is(.add_to_cart_button):hover {
+        background: var(--wp--preset--color--department);
+        color: var(--wp--preset--color--base);
+    }
+}
+
+@media (min-width: 1024px) {
+    .site-main .block .content.content-bestsellers .products {
+        grid-template-columns: 1.8fr 1fr 1fr 1fr;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child {
+        grid-column: span 1;
+        grid-row: span 2;
+        max-width: 100%;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .woocommerce-loop-product__link .attachment-woocommerce_thumbnail {
+        max-width: 100%;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .woocommerce-loop-product__title {
+        font-size: 17px;
+    }
+    
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__info {
+        grid-template-rows: auto 1fr;
+    }
+
+    /* .site-main .block .content.content-bestsellers .products .product:first-child .product-card__info > :nth-child(1) {
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__info > :nth-child(1) .excerpt {
+        margin-top: 13px;
+        max-height: unset;
+    } */
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__info > :nth-child(2) {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .price {
+        font-size: 20px;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__buttons {
+        max-height: 300px;
+        padding: var(--padding-loop);
+        background-color: transparent;
+        position: relative;
+        bottom: 0;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:hover:first-child .product-card__buttons {
+        bottom: 0;
+        border-color: transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child :is(.add_to_cart_button) {
+        max-height: 150px;
+        font-size: 1rem;
+        height: calc(2.25rem + 2px);
+        line-height: 1.5;
+        padding: .375rem 1.25rem;
+        font-weight: 500;
+    }
+
+    .site-main .block .content.content-bestsellers .products .product:first-child .product-card__buttons .yith-wcwl-add-to-wishlist-button.yith-wcwl-add-to-wishlist-button--anchor {
+        width: calc(2.25rem + 2px);
+        height: calc(2.25rem + 2px);
+    }
+
+    @media (min-width: 1366px) {
+        .block .content.content-bestsellers {
+            padding-bottom: 50px;
+        }
+    }
+}

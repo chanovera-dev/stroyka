@@ -1,0 +1,73 @@
+/* bottom header - categories button */
+.bottom-header-content .categories-list-wrapper .departments-button {
+    width:255px;
+    height:42px;
+    padding:0 14px;
+    display:flex;
+    gap:14px;
+    align-items:center;
+    justify-content:space-between;
+    background-color:var(--background--departments-button);
+    border:var(--background--departments-button);
+    border-radius: 2px;
+    color:#fff;
+    fill:#859ba6;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    transition:fill .3s ease;
+}
+
+.bottom-header-content .categories-list-wrapper .departments-button:hover {
+    fill: #fff;
+}
+
+.bottom-header-content .categories-list-wrapper .departments-button .departments__button-arrow {
+    margin-left: auto;
+}
+
+/* bottom header - categories button · list */
+.bottom-header-content .categories-list-wrapper {
+    position: relative;
+}
+
+.bottom-header-content .categories-list-wrapper .categories-list {
+    position: absolute;
+    left: 0;
+    top: 39px;
+    background-color: #3d464d;
+    padding: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height .3s ease-in-out;
+}
+
+.bottom-header-content .categories-list-wrapper .categories-list li a {
+    font-weight: 400;
+    position: relative;
+    display: block;
+    padding: 10px 16px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .02em;
+    transition: background-color .3s ease;
+}
+
+.bottom-header-content .categories-list-wrapper .categories-list li a:hover {
+    background-color: #525d66;
+}
+
+/* bottom header - categories button · open list */
+.bottom-header-content .categories-list-wrapper .categories-list.open {
+    background-color: #3d464d;
+    padding: 9px 0 6px;
+    height: 419px;
+    max-height: 419px;
+    overflow-y: scroll;
+}
+
+.bottom-header-content .categories-list-wrapper .categories-list.open::-webkit-scrollbar {
+    display: none;
+}

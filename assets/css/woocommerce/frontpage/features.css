@@ -1,0 +1,60 @@
+:root {
+    --columns--features: 1fr;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --columns--features: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --columns--features: repeat(4, 1fr);
+    }
+}
+
+.block:has(.content-features) {
+    margin-top: -40px;
+}
+
+.content-features {
+    display: grid;
+    grid-template-columns: var(--columns--features);
+}
+
+.content-features,
+.content-features .block-feature {
+    border: 1px solid var(--separator);
+}
+
+.block-feature,
+.block-feature a {
+    padding: 16px 24px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.block-feature:has(a) {
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.block-feature svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--margin-bottom--features--icon);
+}
+
+.block-feature .block-feature-title {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.block-feature .block-feature-text {
+    font-size: 14px;
+}

@@ -1,0 +1,159 @@
+.slideshow-wrapper {
+    margin-top: 15px;
+    margin-left: var(--margin-left--hero-slideshow);
+    height: 395px;
+    width: calc(100% - var(--margin-left--hero-slideshow));
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow-wrapper .slideshow {
+    height: 100%;
+    display: flex;
+}
+
+/* slides */
+.slide {
+    position: relative;
+    padding: var(--padding--slide);
+    height: 100%;
+    display: flex;
+    align-items: var(--align--content--slide);
+}
+
+.slide :is(.mobile-picture,.normal-picture,.background-cover) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.slide .mobile-picture {
+    display: var(--display--mobile-picture--slide);
+}
+
+.slide .normal-picture {
+    display: var(--display--normal-picture--slide);
+}
+
+.slide .background-cover {
+    z-index: 1;
+    background-color: rgba(255,255,255,.65);
+    backdrop-filter: saturate(180%) blur(20px);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+:is(.slide-2,.slide-3) .background-cover {
+    background-color: rgba(0,0,0,.65);
+}
+
+.slideshow-wrapper:hover .slideshow .slide .background-cover {
+    opacity: 1;
+}
+
+.slide .slide__content {
+    color: var(--wp--preset--color--department);
+    text-align: var(--text-align--slide);
+    position: relative;
+    z-index: 2;
+}
+
+.slide .slide__content .slide__title {
+    font-size: var(--font-size-title-slide);
+    margin-bottom: 12px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.slide .slide__content .slide__excerpt {
+    display: var(--display--excerpt--slide);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform .6s ease-in-out, opacity .6s ease-in-out;
+}
+
+.slide .slide__content .btn {
+    margin-top: var(--margin-top--btn--slide);
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+
+.slide.active .slide__content :is(.slide__title,.btn) {
+    opacity: 1;
+}
+
+.slide.active .slide__content .slide__excerpt {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* color text for slide 2 / 3 */
+:is(.slide-2,.slide-3) .slide__content {
+    color: var(--wp--preset--color--base);
+}
+
+/* dots */
+.slideshow-dots {
+    position: absolute; 
+    bottom: 20px; 
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    gap: 10px;
+    background-color: var(--wp--preset--color--base);
+    padding: 5px;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.slideshow-dots .slideshow-button {
+    width: var(--slideshow-buttons-size); 
+    height: var(--slideshow-buttons-size); 
+    border-radius: 50%; 
+    background-color:#e0e0e0;
+    cursor: pointer;
+}
+.slideshow-dots .slideshow-button.active {
+    background-color: var(--wp--preset--color--main);
+}
+
+/* buttons */
+:is(.slideshow-prev,.slideshow-next) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    left: 9px;
+    display: grid;
+    place-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    border: none;
+    background-color: transparent;
+    transition: background-color .3s ease-in-out;
+}
+
+:is(.slideshow-prev,.slideshow-next):hover {
+    background-color: rgba(255,255,255,.5);
+}
+
+.slideshow-next {
+    left: unset;
+    right: 9px;
+}
+
+:is(.slideshow-prev,.slideshow-next) svg {
+    fill: var(--wp--preset--color--base);
+    width: 20px;
+    height: 20px;
+}
+
+:is(.slideshow-prev,.slideshow-next):hover svg {
+    fill: var(--wp--preset--color--department);
+}

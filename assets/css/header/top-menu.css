@@ -1,0 +1,113 @@
+.block:has(.top-header-content) {
+    position: relative;
+    display: var(--display--top-header);
+    z-index: 9;
+    background-color: var(--top-menu);
+}
+
+.top-header-content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    transition: opacity .1s ease-in-out;
+}
+
+.top-header-content .top-header {
+    width: 100%;
+}
+
+.top-header-content ul,
+.top-header .menu li.menu-item-has-children .sub-menu {
+    padding: 0;
+    list-style: none;
+}
+
+.top-header-content ul li :is(a, .button-for-submenu) {
+    font-size: 14px;
+    line-height: 1;
+    color: var(--top-menu--link);
+    fill: var(--icon--soft);
+    display: flex;
+    align-items: center;
+    transition: color .3s ease, background-color .3s ease;
+}
+
+.top-header .menu {
+    display: flex;
+    align-items: center;
+    min-height: 32px;
+}
+
+.top-header .menu > li:not(:first-child) > a {
+    margin-left: 16px;
+}
+
+.top-header .menu li.menu-item-has-children:has(.button-for-submenu) + li a {
+    margin-left: 0;
+}
+
+.top-header .menu > li > a:hover {
+    color: var(--link);
+}
+
+.top-header .menu li.menu-item-has-children {
+    position: relative;
+}
+
+.top-header .menu li.menu-item-has-children .button-for-submenu {
+    font-family: var(--wp--preset--font-family--roboto);
+    border: none;
+    background-color: transparent;
+    height: 32px;
+    padding: 0 12px 0 16px;
+    gap: 7px;
+    transition: background-color .1s ease-in-out, color .3s ease-in-out;
+}
+
+.top-header .menu li.menu-item-has-children .button-for-submenu:hover,
+.top-header .menu li.menu-item-has-children.menu-item-has-children--opened .button-for-submenu {
+    background-color: var(--top-menu--button--hover);
+    color: var(--text);
+}
+
+.top-header .menu li.menu-item-has-children .sub-menu {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: max-content;
+    max-height: 0;
+    background-color: var(--top-menu--submenu);
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .25);
+    overflow: hidden;
+    transition: max-height .3s ease;
+}
+
+.top-header .menu li.menu-item-has-children.menu-item-has-children--opened .sub-menu {
+    max-height: 1000px;
+}
+
+.top-header .menu li.menu-item-has-children .sub-menu > :is(li:first-child, li:last-child) {
+    position: relative;
+}
+
+.top-header .menu li.menu-item-has-children .sub-menu > li:first-child::before,
+.top-header .menu li.menu-item-has-children .sub-menu > li:last-child::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 6px;
+}
+
+.top-header .menu li.menu-item-has-children .sub-menu li a {
+    display: block;
+    padding: 8px 20px;
+    color: var(--text);
+    font-weight: 500;
+    transition: background-color .1s ease-in-out;
+}
+
+
+.top-header .menu li.menu-item-has-children .sub-menu li a:hover {
+    background-color: var(--submenu--link--hover);
+}

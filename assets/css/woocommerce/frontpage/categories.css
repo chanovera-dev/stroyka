@@ -1,0 +1,70 @@
+.block:has(.content-categories) {
+    background-color: var(--categories);
+    padding: 50px 0 60px;
+    margin-top: -50px;
+}
+
+.block:has(.content-categories) .content-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+}
+
+.block:has(.content-categories) .content-categories .category-card__body {
+    background-color: var(--base);
+    padding: 24px 20px;
+    display: flex;
+    gap: 24px;
+}
+
+.block:has(.content-categories) .content-categories .category-card__body .category-card__image a img {
+    width: 130px;
+}
+
+.block:has(.content-categories) .content-categories .category-card__body .category-card__content {
+    overflow: hidden;
+}
+
+.block:has(.content-categories) .content-categories .category-card__body .category-card__content .category-card__name {
+    margin-top: -2px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 19px;
+}
+
+.block:has(.content-categories) .content-categories .category-card__body .category-card__content .category-card__links {
+    line-height: 22px;
+    flex-grow: 1;
+    list-style: none;
+    margin: 14px 0px 0px;
+    padding: 0px;
+    -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    mask-image: linear-gradient(to right, black 60%, transparent 100%);
+}
+
+.block:has(.content-categories) .content-categories .category-card__body .category-card__content .category-card__links li {
+    display: flex;
+}
+
+.block:has(.content-categories) .content-categories .category-card__body .category-card__content .category-card__links li a {
+    font-size: 14px;
+    color: #6c757d;
+    transition: .15s;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.block:has(.content-categories) .content-categories .category-card__body .category-card__content .category-card__links a:hover {
+    color: var(--link);
+}
+
+.block:has(.content-categories) .content-categories .category-card__body .category-card__content .category-card__all {
+    margin-top: 14px;
+}
+
+.block:has(.content-categories) .content-categories .category-card__body .category-card__content .category-card__all a {
+        font-size: 14px;
+        color: var(--link);
+}

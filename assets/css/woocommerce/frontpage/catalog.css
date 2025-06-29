@@ -1,0 +1,74 @@
+:root {
+    --height--catalog: 390px;
+}
+
+.site-main .block:has(.catalog) .content.catalog {
+    position: relative;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    height: var(--height--catalog);
+}
+
+.site-main .block:has(.catalog) .content.catalog :is(.mobile-picture,.normal-picture) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.site-main .block:has(.catalog) .content.catalog .background-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: saturate(180%) blur(20px);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.site-main .block:has(.catalog) .content.catalog:hover .background-cover {
+    opacity: 1;
+}
+
+.site-main .block:has(.catalog) .content.catalog:hover .content-catalog > *:not(:last-child) {
+    text-shadow: none;
+}
+
+.site-main .block:has(.catalog) .content.catalog .content-catalog {
+    z-index: 2;
+    color: #fff;
+}
+
+.site-main .block:has(.catalog) .content.catalog .content-catalog > *:not(:last-child) {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #0000007c;
+}
+
+@media (max-width: 767px) {
+    .site-main .block:has(.catalog) .content.catalog .normal-picture {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --height--catalog: 170px;
+    }
+
+    .site-main .block:has(.catalog) .content.catalog .mobile-picture {
+        display: none;
+    }
+}
+
+@media (min-width: 1366px) {
+    .site-main .block:has(.catalog) {
+        margin-top: -56px;
+    }
+}

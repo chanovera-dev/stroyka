@@ -1,0 +1,16 @@
+.post-body--content .post-categories {
+    justify-content: start;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post-body--content .main-title {
+    text-align: left;
+    max-width: 100%;
+}
+
+.post-body--content .container__post-data {
+    margin-top: 0;
+    margin-bottom: 16px;
+    justify-content: start;
+}

@@ -1,0 +1,77 @@
+:root {
+    --padding-body: 26px 20px 40px;
+    --margin-bottom-main-title: 30px;
+    --margin-bottom-body: 40px;
+    --color--border--page: #f2f2f2;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color--border--page: #383838;
+    }
+}
+
+.page-body {
+    margin: 16px 0 var(--margin-bottom-body);
+    padding: var(--padding-body);
+    border-radius: 2px;
+    border: 2px solid var(--color--border--page);
+}
+
+.page-body * {
+    max-width: 706px;
+    margin-inline: auto;
+}
+
+.page-body .main-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--wp--preset--font-size--xx-large);
+    margin-bottom: .5rem;
+}
+
+.page-body .latest-modified {
+    text-align: center;
+    margin-bottom: 50px;
+    opacity: .75;
+    font-size: 14px;
+}
+
+.page-body h2.wp-block-heading {
+    font-size: 32px;
+    margin-top: 1.75em;
+}
+
+.page-body strong {
+    font-weight: 500;
+}
+
+.page-body a {
+    color: var(--color--link);
+    transition: color .3s ease;
+}
+
+.page-body a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width:768px) {
+    :root {
+        --padding-body: 35px 30px 80px;
+        --margin-bottom-main-title: 40px;
+        --margin-bottom-body: 70px;
+    }
+}
+
+@media (min-width:992px) {
+    :root {
+        --padding-body: 45px 35px 90px;
+    }
+}
+
+@media (min-width:1200px) {
+    :root {
+        --padding-body: 75px 110px 110px;
+        --margin-bottom-main-title: 60px;
+    }
+}

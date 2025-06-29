@@ -1,0 +1,84 @@
+.block .content.middle {
+    padding-bottom: 60px;
+}
+
+.block .content.bottom {
+    display: grid;
+    gap: 30px;
+    border: 1px solid var(--separator);
+    padding: 2rem;
+    margin-bottom: 60px;
+}
+
+.block .content.bottom .title-section {
+    margin-bottom: 1.75rem;
+    font-size: 24px;
+}
+
+.contact .menu {
+    padding-left: 23px;
+    list-style: none;
+}
+
+.contact .menu li {
+    padding: 4px 0;
+}
+
+.contact .menu li a {
+    position: relative;
+    display: inline-block;
+}
+
+.contact .menu li a:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--text);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    margin-right: 7px;
+    top: 2px;
+    left: -23px;
+}
+
+.wpcf7-form {
+    display: grid;
+    gap: 24px;
+}
+
+.wpcf7-form input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="hidden"]):not([type="range"]):not([type="color"]):not(form.woocommerce-product-search input):not(.block-search__input):not(.wc-block-formatted-money-amount),
+.wpcf7-form textarea {
+    width: 100%;
+}
+
+.wpcf7-form > p {
+    display: grid;
+}
+
+p span[data-name="your-message"] textarea {
+    height: 94px;
+}
+
+p:has(.wpcf7-submit) {
+    grid-column: 1 / -1;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .wpcf7-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wpcf7-form p:has(span[data-name="your-subject"],span[data-name="your-message"]) {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .block .content.bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+}

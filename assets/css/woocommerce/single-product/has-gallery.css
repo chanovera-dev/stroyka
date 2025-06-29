@@ -1,0 +1,50 @@
+.woocommerce div.product div.images .flex-viewport {
+    border: 2px solid var(--color--border--gallery);
+    margin-bottom: 20px;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs {
+    overflow: hidden;
+    zoom:1;
+    margin: 0;
+    padding: 0;
+    width: calc(100% + 20px);
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+    width: calc(25% - 20px);
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+    list-style: none;
+    border: 2px solid var(--color--border--gallery);
+    transition: border-color .3s ease;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li:has(.flex-active) {
+    border-color:var(--wp--preset--color--main);
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li img {
+    cursor: pointer;
+    opacity: .5;
+    margin: 0;
+    transition: opacity .3s ease;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li img.flex-active,
+.woocommerce div.product div.images .flex-control-thumbs li img:hover {
+    opacity: 1
+}
+
+.woocommerce div.product .woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n+1) {
+    clear: left
+}
+
+.woocommerce div.product .woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1) {
+    clear: left
+}
+
+.woocommerce div.product .woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n+1) {
+    clear: left
+}

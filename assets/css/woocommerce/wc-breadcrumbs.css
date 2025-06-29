@@ -1,0 +1,22 @@
+/* breadcrumb */
+.woocommerce-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 12px;
+    color: var(--icon--strong);
+    font-size: 14px;
+    fill: var(--icon--soft);
+    padding: 16px 0;
+    grid-column: 1/-1;
+}
+
+.woocommerce-breadcrumb a {
+    color: var(--text);
+    font-size: 14px;
+    transition: color .3s ease;
+}
+
+.woocommerce-breadcrumb a:hover {
+    color: var(--link);
+}

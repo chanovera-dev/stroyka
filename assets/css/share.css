@@ -1,0 +1,22 @@
+.share {
+    display: flex;
+    gap: 7px;
+}
+
+.share a {
+    display: grid;
+    place-content: center;
+    width: 29.51px;
+    height: 29.51px;
+    border-radius: 0;
+    color: #fff;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.share a[href*="facebook"]{background-color:#3c5a99;}
+.share a[href*="twitter"]{background-color:#00a2e8;}
+.share a[href*="youtube"]{background-color:#e52e2e;}
+.share a[href*="instagram"]{background-color:#815dc7;}
+.share a[href*="google"]{background-color:#e52e2e;}
+.share a[href*="whatsapp"]{background-color:#25D366;}
+.share a[href*="tg"]{background-color:#34B7F1;}

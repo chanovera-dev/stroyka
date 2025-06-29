@@ -1,0 +1,42 @@
+/* pagination */
+.site-main .container--posts .content .posts .navigation.pagination {
+    grid-column: 1 / -1;
+    margin-inline: auto;
+}
+
+.site-main .container--posts .content .posts .navigation.pagination .screen-reader-text {
+    display: none;
+}
+
+.site-main .container--posts .content .posts .navigation.pagination .nav-links {
+    display: flex;
+    align-items:center;
+}
+
+.site-main .container--posts .content .posts .navigation.pagination .nav-links .page-numbers {
+    font-weight: 500;
+    border-radius: 2px;
+    border: none;
+    line-height: 1;
+    margin: 0 2px;
+    padding: 9px 10px 8px;
+    height: 33px;
+    background: transparent;
+    color: var(--text);
+    fill: var(--text);
+    transition: all .3s ease-in-out;
+}
+
+.site-main .container--posts .content .posts .navigation.pagination .nav-links .page-numbers.current {
+    background: var(--wp--preset--color--main);
+    color: var(--wp--preset--color--department);
+}
+
+.site-main .container--posts .content .posts .navigation.pagination .nav-links .page-numbers:hover:not(.current) {
+    background: var(--btn-secondary);
+    color: var(--text);
+}
+
+.site-main .container--posts .content .posts .navigation.pagination .nav-links :is(.page-numbers.prev,.page-numbers.next) {
+    font-size: 0;
+}

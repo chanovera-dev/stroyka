@@ -1,0 +1,35 @@
+:root {
+    /* margin */
+    --margin-top-4-wpadminbar: 46px;
+}
+
+html #wpadminbar {
+    transform: translateY(-1 * var(--margin-top-4-wpadminbar));
+}
+
+body:has(#wpadminbar) {
+    margin-top: var(--margin-top-4-wpadminbar) !important;
+    min-height: calc(100svh - var(--margin-top-4-wpadminbar));
+}
+
+.menu-mobile {
+    height: calc(100svh - var(--margin-top-4-wpadminbar));
+    top: var(--margin-top-4-wpadminbar);
+}
+
+.block:has(.bottom-header-content) {
+    top: var(--margin-top-4-wpadminbar);
+}
+
+@media (max-width: 601px) {
+    html #wpadminbar {
+        top: calc(-1 * var(--margin-top-4-wpadminbar));
+    }
+}
+
+@media (min-width: 783px) {
+    :root {
+        /* margin */
+        --margin-top-4-wpadminbar: 32px;
+    }
+}

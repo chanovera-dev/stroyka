@@ -1,0 +1,56 @@
+.woocommerce-pagination {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-column: 1 / -1;
+}
+
+.woocommerce-pagination .page-numbers {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    height: 33px;
+    align-self: end;
+    list-style: none;
+    padding-left: 0;
+}
+
+.woocommerce-pagination .page-numbers .page-numbers {
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    width: 29px;
+    height: 33px;
+    color:var(--text);
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.woocommerce-pagination .page-numbers .page-numbers.disabled svg {
+    fill:var(--icon--soft);
+}
+
+.woocommerce-pagination .page-numbers .page-numbers.current {
+    background-color: var(--wp--preset--color--main);
+    color:  var(--wp--preset--color--department);
+}
+
+.woocommerce-pagination .page-numbers .page-numbers:not(.current):hover {
+    background-color: var(--btn-secondary);
+}
+
+.woocommerce-pagination .page-numbers :is(.page-numbers.prev, .page-numbers.next) {
+    fill: var(--text);
+}
+
+.woocommerce-pagination .page-numbers :is(.page-numbers.prev, .page-numbers.next):hover{
+    background-color: var(--btn-secondary);
+}
+
+@media (min-width:1024px) {
+    .woocommerce-pagination {
+        margin-top: 0;
+    }
+} 

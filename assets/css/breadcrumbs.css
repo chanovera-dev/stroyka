@@ -1,0 +1,33 @@
+.site-main .post-header .content.top {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 16px 0;
+}
+
+.site-main .post-header .content.top .breadcrumbs {
+    font-size: 14px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 10px;
+}
+
+.site-main .post-header .content.top .breadcrumbs a {
+    color: var(--text);
+    transition: color .3s ease;
+}
+
+.site-main .post-header .content.top .breadcrumbs a:hover {
+    color: var(--link);
+}
+
+.site-main .post-header .content.top .breadcrumbs svg {
+    fill: var(--breadcrumb--separator);
+}
+
+.site-main .post-header .content.top .breadcrumbs {
+    color: var(--breadcrumb--current-page);
+}
